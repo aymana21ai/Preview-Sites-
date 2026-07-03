@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Advanced Water | Water Softeners &amp; Filtration in New Port Richey, FL</title>
+<meta name="description" content="Advanced Water — locally owned water softeners, whole-house filtration &amp; reverse osmosis for New Port Richey and Tampa Bay. City &amp; well water. Free water testing.">
+<style>
+:root{
+  --primary:#12557C; --primary-dark:#0D3F5E;
+  --accent:#1DA1D6; --accent-dark:#1587B8; --accent-ink:#ffffff; --accent-text:#1587B8;
+  --ink:#1f2733; --muted:#5b6675; --line:#e7eaef; --bg-soft:#f5f7fa; --white:#fff;
+  --radius:16px; --shadow:0 18px 40px rgba(20,30,50,.10);
+  --font:'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);line-height:1.65;background:var(--white)}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+h1,h2,h3{line-height:1.15;color:var(--primary-dark)}
+h2{font-size:34px;margin-bottom:10px}
+.eyebrow{color:var(--accent-text);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:10px}
+.center{text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;line-height:1;background:var(--accent);color:var(--accent-ink);font-weight:800;padding:15px 30px;border-radius:12px;
+  border:none;cursor:pointer;font-size:15px;letter-spacing:.3px;transition:.18s;box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.btn:hover{background:var(--accent-dark);transform:translateY(-2px)}
+.btn-sm{padding:10px 20px;font-size:14px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.10)}
+.btn-light{background:#fff;color:var(--primary-dark)}
+
+header{position:sticky;top:0;z-index:60;background:#fff;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:21px;color:var(--primary-dark)}
+.brand img{height:46px;width:auto}
+.navlinks{display:flex;gap:26px;font-weight:600}
+.navlinks a:hover{color:var(--accent)}
+.navside{display:flex;align-items:center;gap:18px}
+.phone{font-weight:800;color:var(--primary-dark);white-space:nowrap}
+@media(max-width:920px){.navlinks,.phone{display:none}}
+
+.hero{position:relative;color:#fff;background:linear-gradient(rgba(18,26,40,.62),rgba(18,26,40,.72)),url('https://images.pexels.com/photos/35627363/pexels-photo-35627363.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding:96px 0}
+.hero h1{color:#fff;font-size:48px;margin-bottom:8px}
+.hero .lede{font-size:25px;font-weight:600;opacity:.96;margin-bottom:14px}
+.hero p.sub{font-size:17px;opacity:.92;max-width:520px;margin-bottom:26px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.badges span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:30px;font-size:13px;font-weight:600}
+.quote{background:#fff;color:var(--ink);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.quote h3{text-align:center;font-size:23px;margin-bottom:3px}
+.quote .qs{text-align:center;color:var(--muted);font-size:14px;margin-bottom:18px}
+.field{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;margin-bottom:12px;font-size:15px;font-family:inherit}
+textarea.field{min-height:84px;resize:vertical}
+.consent{font-size:11px;color:var(--muted);margin:4px 0 14px}
+.quote .btn{width:100%}
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr;padding:56px 0}.hero h1{font-size:34px}.hero .lede{font-size:20px}}
+
+.trust{background:var(--primary-dark);color:#fff}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:space-around;gap:16px;padding:22px}
+.trust b{font-size:15px;letter-spacing:.5px;text-transform:uppercase;display:flex;gap:9px;align-items:center}
+.trust b::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--accent)}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-grid img{border-radius:var(--radius);height:420px;width:100%;object-fit:cover;box-shadow:var(--shadow)}
+.about p{color:var(--muted);font-size:17px;margin-top:8px}
+@media(max-width:920px){.about-grid{grid-template-columns:1fr}.about-grid img{height:280px}}
+
+.services{background:var(--bg-soft)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.2s}
+.card:hover{transform:translateY(-6px)}
+.card img{height:190px;width:100%;object-fit:cover}
+.card .cb{padding:22px}
+.card h3{font-size:20px;margin-bottom:8px;color:var(--primary-dark)}
+.card p{color:var(--muted);font-size:14.5px}
+@media(max-width:920px){.cards{grid-template-columns:1fr}}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:42px}
+.step{text-align:center}
+.step .n{width:66px;height:66px;border-radius:50%;background:var(--primary);color:#fff;font-size:26px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.step h3{margin-bottom:6px} .step p{color:var(--muted);font-size:15px}
+@media(max-width:920px){.steps{grid-template-columns:1fr}}
+
+.gallery{background:var(--bg-soft)}
+.grid-imgs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+.grid-imgs img{height:180px;width:100%;object-fit:cover;border-radius:12px}
+@media(max-width:920px){.grid-imgs{grid-template-columns:repeat(2,1fr)}}
+
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.review{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.stars{color:#f5b50a;font-size:18px;margin-bottom:10px}
+.review p{color:#39424f;font-size:15px} .review .who{margin-top:14px;font-weight:800;color:var(--primary-dark)}
+@media(max-width:920px){.rev{grid-template-columns:1fr}}
+
+.faq{max-width:840px;margin:36px auto 0}
+.qa{border-bottom:1px solid var(--line)}
+.qa button{width:100%;text-align:left;background:none;border:none;padding:20px 0;font-size:17px;font-weight:700;
+  color:var(--primary-dark);cursor:pointer;display:flex;justify-content:space-between;gap:16px;font-family:inherit}
+.qa .ic{color:var(--accent-text);font-size:24px;line-height:1}
+.qa .ans{max-height:0;overflow:hidden;transition:max-height .28s ease}
+.qa .ans p{padding-bottom:18px;color:var(--muted);font-size:15.5px}
+
+.areas{background:var(--primary-dark);color:#fff}
+.areas h2{color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.chips span{background:rgba(255,255,255,.12);padding:10px 20px;border-radius:30px;font-weight:600}
+
+.final{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;text-align:center}
+.final h2{color:#fff;font-size:38px} .final p{font-size:19px;opacity:.95;margin:10px 0 26px}
+
+footer{background:#161d28;color:#aab4c2;padding:56px 0 26px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;text-transform:uppercase;letter-spacing:1px;font-size:15px;margin-bottom:14px}
+footer a{display:block;margin-bottom:7px} footer a:hover{color:#fff}
+.fbrand{font-weight:800;font-size:21px;color:#fff;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.fbrand img{height:38px}
+.fbot{border-top:1px solid #2a3340;margin-top:34px;padding-top:18px;text-align:center;color:#7f8a99;font-size:13px}
+@media(max-width:920px){.fgrid{grid-template-columns:1fr 1fr}}
+</style></head>
+<body>
+
+<header><div class="wrap"><nav>
+  <a href="#home" class="brand"><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22320%22%20height%3D%2256%22%20viewBox%3D%220%200%20320%2056%22%3E%0A%3Cpath%20d%3D%22M26%206%20C26%206%2012%2024%2012%2034%20a14%2014%200%200%200%2028%200%20C40%2024%2026%206%2026%206%20Z%22%20fill%3D%22%231DA1D6%22/%3E%0A%3Cpath%20d%3D%22M22%2030%20a8%208%200%200%200%208%206%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22/%3E%0A%3Ctext%20x%3D%2250%22%20y%3D%2228%22%20font-family%3D%22Arial%2CSegoe%20UI%2Csans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%20fill%3D%22%230D3F5E%22%3EAdvanced%3C/text%3E%0A%3Ctext%20x%3D%2250%22%20y%3D%2246%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2215%22%20font-weight%3D%22700%22%20fill%3D%22%231DA1D6%22%20letter-spacing%3D%224%22%3EWATER%3C/text%3E%3C/svg%3E" alt="Advanced Water"></a>
+  <div class="navlinks">
+    <a href="#services">Services</a><a href="#about">About</a>
+    <a href="#gallery">Gallery</a><a href="#areas">Areas</a><a href="#contact">Contact</a>
+  </div>
+  <div class="navside"><span class="phone">(727) 641-5240</span><a href="#contact" class="btn btn-sm">Free Quote</a></div>
+</nav></div></header>
+
+<section class="hero" id="home"><div class="wrap"><div class="hero-grid">
+  <div>
+    <h1>Water Softeners &amp; Filtration in New Port Richey</h1>
+    <div class="lede">Healthy, Clean Water for Your Home</div>
+    <p class="sub">Locally owned water softeners, whole-house filtration, and reverse osmosis for New Port Richey and the greater Tampa Bay area — city water or well water. Free water testing.</p>
+    <a href="#contact" class="btn">Get a Free Quote</a>
+    <div class="badges"><span>Locally Owned &amp; Licensed</span><span>4.4★ on Google</span><span>City &amp; Well Water</span><span>Free Water Testing</span></div>
+  </div>
+  <div class="quote" id="contact">
+    <h3>Get a Free Quote</h3><div class="qs">We'll get back to you the same day.</div>
+    <input class="field" placeholder="Full Name *">
+    <input class="field" placeholder="Phone *">
+    <textarea class="field" placeholder="Tell us about your project *"></textarea>
+    <div class="consent">By providing your phone number you agree to receive text messages from Advanced Water.</div>
+    <button class="btn">Send</button>
+  </div>
+</div></div></section>
+
+<div class="trust"><div class="wrap"><b>Locally Owned &amp; Licensed</b><b>4.4-Star Rated</b><b>Free Service Calls</b><b>City &amp; Well Water</b></div></div>
+
+<section class="about" id="about"><div class="wrap about-grid">
+  <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFroaWROWw2xPnonkqq4MZVgDdDgwT1pQ6PKcuFbb_Vt5Lvwl4sU__HyfdEsa3W8ESuvoM7gDNtdDGssUOvUzo3mnfDJfZJmrQYVS8X-tgTf7tfOc3vId4QoFR4GtoCkb0bV-tZJIzjU6Fk=w1000-h750" alt="Advanced Water">
+  <div><div class="eyebrow">About Us</div><h2>Healthy, Clean Water for Tampa Bay</h2><p>Advanced Water is a locally owned, licensed water treatment company based in New Port Richey and serving the greater Tampa Bay area. We handle city water and well water alike, offering new and reconditioned softeners, whole-house filtration, and reverse osmosis drinking systems — backed by free water testing, free service calls, and free inspections. Our mission is simple: healthy, clean, quality water for every home we serve.</p>
+    <p style="margin-top:14px"><a href="#contact" class="btn">Get a Free Quote</a></p></div>
+</div></section>
+
+<section class="services" id="services"><div class="wrap center">
+  <div class="eyebrow">Our Services</div><h2>Our Water Treatment Services</h2>
+  <div class="cards" style="text-align:left"><div class="card"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGSGzwSOKrAEfHt-Ec7Zg-tcoIU2TKD0aZBsalvfPUbIMiYcH7zJJS1udu9GA8GL80MMqIfAyKenBkfOq6y8zTu0AOgN0ETraWmOJROt_zUvtxH44aS7yJn67X-6QKnKj1bEgRn91EZgVA=w1000-h750" alt="Water Softener Installation"><div class="cb"><h3>Water Softener Installation</h3><p>Whole-home water softener systems, new or reconditioned, professionally installed for softer water and longer-lasting appliances.</p></div></div><div class="card"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEBThyUDV_6coNETo4cT_AOK4qSPjY3dKqzRhO1LrH00uB-DH9pMcdzDMIiBnTSE3bl35fUvdj1m-pUjIJL1qBfJ9S9NlPMnjKsj1JJRZ0qlJb7Zg1dQqIyDAsWzVFDCKAfwXCH9Q=w1000-h750" alt="Softener Service &amp; Repair"><div class="cb"><h3>Softener Service &amp; Repair</h3><p>Fast service and repairs on any make or model — plus free service calls and free inspections on your current softener.</p></div></div><div class="card"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFWc5-RWyb0TAWtUU-kE_GDzsO5ZKQuhMG0lyo7s1SJexemKhRlN9CwkYcii1yfhF6GJBVx_RmcESf3k_hU_E7EdbwncAzFrvgEWqM2fHRQVKnj5MRxLvyPR8u_MOfUwqO51Z2ADEd5A-T2=w1000-h750" alt="Whole-House Water Filtration"><div class="cb"><h3>Whole-House Water Filtration</h3><p>Complete filtration that removes hardness, iron, chlorine, and contaminants for clean, healthy water at every tap.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/372796/pexels-photo-372796.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Reverse Osmosis Drinking Water"><div class="cb"><h3>Reverse Osmosis Drinking Water</h3><p>Under-sink reverse osmosis systems that deliver crisp, great-tasting drinking water straight from your kitchen faucet.</p></div></div><div class="card"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEFfPe0mO959tNTaIUiuuYAkmo5SA_ehcR8px2R3NfBgajEIv-PbojVqkU3ic-Jz1Rvi7b0GM8TZhbNP7BPhTkqUZUMvNR2hXiPGdSfTiDI0ACMxhgBuyS3mtA1cV-e0qPl41c=w1000-h750" alt="Salt Delivery &amp; Rentals"><div class="cb"><h3>Salt Delivery &amp; Rentals</h3><p>Convenient salt delivery, softener rentals, and easy maintenance plans so your system always runs its best.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/17505835/pexels-photo-17505835.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Free Water Testing"><div class="cb"><h3>Free Water Testing</h3><p>Free in-home water testing and analysis for both city and well water, so you know exactly what&#x27;s in your water.</p></div></div></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">The Process</div><h2>Simple 3-Step Process</h2>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>Contact Us</h3><p>Fill out the free quote form and tell us about your project.</p></div>
+    <div class="step"><div class="n">2</div><h3>Free Estimate</h3><p>We visit at a time that works for you and provide a clear, honest estimate.</p></div>
+    <div class="step"><div class="n">3</div><h3>Get It Done</h3><p>Approve the estimate and we schedule the work and deliver results you'll love.</p></div>
+  </div>
+</div></section>
+
+<section class="gallery" id="gallery"><div class="wrap center">
+  <div class="eyebrow">Our Work</div><h2>Recent Projects</h2>
+  <div class="grid-imgs"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFroaWROWw2xPnonkqq4MZVgDdDgwT1pQ6PKcuFbb_Vt5Lvwl4sU__HyfdEsa3W8ESuvoM7gDNtdDGssUOvUzo3mnfDJfZJmrQYVS8X-tgTf7tfOc3vId4QoFR4GtoCkb0bV-tZJIzjU6Fk=w1000-h750" alt="Advanced Water project"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGSGzwSOKrAEfHt-Ec7Zg-tcoIU2TKD0aZBsalvfPUbIMiYcH7zJJS1udu9GA8GL80MMqIfAyKenBkfOq6y8zTu0AOgN0ETraWmOJROt_zUvtxH44aS7yJn67X-6QKnKj1bEgRn91EZgVA=w1000-h750" alt="Advanced Water project"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEBThyUDV_6coNETo4cT_AOK4qSPjY3dKqzRhO1LrH00uB-DH9pMcdzDMIiBnTSE3bl35fUvdj1m-pUjIJL1qBfJ9S9NlPMnjKsj1JJRZ0qlJb7Zg1dQqIyDAsWzVFDCKAfwXCH9Q=w1000-h750" alt="Advanced Water project"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFWc5-RWyb0TAWtUU-kE_GDzsO5ZKQuhMG0lyo7s1SJexemKhRlN9CwkYcii1yfhF6GJBVx_RmcESf3k_hU_E7EdbwncAzFrvgEWqM2fHRQVKnj5MRxLvyPR8u_MOfUwqO51Z2ADEd5A-T2=w1000-h750" alt="Advanced Water project"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEFfPe0mO959tNTaIUiuuYAkmo5SA_ehcR8px2R3NfBgajEIv-PbojVqkU3ic-Jz1Rvi7b0GM8TZhbNP7BPhTkqUZUMvNR2hXiPGdSfTiDI0ACMxhgBuyS3mtA1cV-e0qPl41c=w1000-h750" alt="Advanced Water project"></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">Reviews</div><h2>What Customers Say</h2>
+  <div class="rev" style="text-align:left"><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>I am very particular about which companies I use for my home, and I&#x27;m very happy with the job. Very professional, friendly, and good quality work — great price! I couldn&#x27;t be happier. I definitely recommend this company!</p><div class="who">&mdash; Steve R.</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>I recently had a water system installed in my home by Advanced Water and couldn&#x27;t be more satisfied. From the initial consultation to the final installation, the team was professional, knowledgeable, and helpful.</p><div class="who">&mdash; Lety Sarner</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Tim is an awesome guy! Very pleased with his customer service and the product he sold us. He educated us thoroughly on the water softener and its maintenance. His contractors showed up on time, on the scheduled date, and were easy to work with.</p><div class="who">&mdash; Sophia Elliott</div></div></div>
+</div></section>
+
+<section class="services"><div class="wrap">
+  <h2 class="center">Frequently Asked Questions</h2>
+  <div class="faq"><div class="qa"><button>Do you offer free water testing?<span class="ic">+</span></button><div class="ans"><p>Yes — Advanced Water provides free in-home water testing and analysis for both city and well water, plus free service calls and free inspections on your current softener.</p></div></div><div class="qa"><button>Do you work on both city and well water?<span class="ic">+</span></button><div class="ans"><p>Absolutely. We install and service systems for city water and well water, with solutions tailored to your home&#x27;s specific water quality.</p></div></div><div class="qa"><button>Do you sell new and reconditioned systems?<span class="ic">+</span></button><div class="ans"><p>Yes. We offer both new and quality reconditioned units, along with rentals and salt delivery, so there&#x27;s an option for every budget.</p></div></div><div class="qa"><button>Are you licensed and local?<span class="ic">+</span></button><div class="ans"><p>Yes — Advanced Water is locally owned and licensed, proudly serving New Port Richey and the Tampa Bay area.</p></div></div></div>
+</div></section>
+
+<section class="areas" id="areas"><div class="wrap center">
+  <div class="eyebrow" style="color:var(--accent-text)">Service Area</div>
+  <h2>Proudly Serving New Port Richey &amp; Nearby</h2>
+  <div class="chips"><span>New Port Richey</span><span>Port Richey</span><span>Trinity</span><span>Holiday</span><span>Hudson</span><span>Tarpon Springs</span><span>Palm Harbor</span><span>Clearwater</span><span>St. Petersburg</span><span>Tampa</span></div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Ready to Get Started?</h2><p>Get your free water treatment quote today.</p>
+  <a href="#contact" class="btn btn-light">Get a Free Quote</a>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><div class="fbrand"><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22320%22%20height%3D%2256%22%20viewBox%3D%220%200%20320%2056%22%3E%0A%3Cpath%20d%3D%22M26%206%20C26%206%2012%2024%2012%2034%20a14%2014%200%200%200%2028%200%20C40%2024%2026%206%2026%206%20Z%22%20fill%3D%22%231DA1D6%22/%3E%0A%3Cpath%20d%3D%22M22%2030%20a8%208%200%200%200%208%206%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22/%3E%0A%3Ctext%20x%3D%2250%22%20y%3D%2228%22%20font-family%3D%22Arial%2CSegoe%20UI%2Csans-serif%22%20font-size%3D%2222%22%20font-weight%3D%22800%22%20fill%3D%22%230D3F5E%22%3EAdvanced%3C/text%3E%0A%3Ctext%20x%3D%2250%22%20y%3D%2246%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2215%22%20font-weight%3D%22700%22%20fill%3D%22%231DA1D6%22%20letter-spacing%3D%224%22%3EWATER%3C/text%3E%3C/svg%3E" alt="Advanced Water"></div>
+      <p>Quality water treatment services across New Port Richey and the surrounding area.</p>
+      <p style="margin-top:12px;color:#fff;font-weight:700">(727) 641-5240</p></div>
+    <div><h4>Company</h4><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+    <div><h4>Services</h4><a href="#services">Water Softener Installation</a><a href="#services">Softener Service &amp; Repair</a><a href="#services">Whole-House Water Filtration</a><a href="#services">Reverse Osmosis Drinking Water</a><a href="#services">Salt Delivery &amp; Rentals</a></div>
+    <div><h4>Hours</h4><p>Mon-Sat: 8am - 6pm</p><p>Sun: Closed</p></div>
+  </div>
+  <div class="fbot">&copy; 2026 Advanced Water. All rights reserved.</div>
+</div></footer>
+
+<style>
+#mschat{position:fixed;right:22px;bottom:22px;z-index:90;font-family:var(--font)}
+#mschat .ms-bubble{background:var(--accent);color:var(--accent-ink);font-weight:800;border:none;cursor:pointer;padding:14px 22px 14px 18px;border-radius:40px;box-shadow:0 10px 26px rgba(0,0,0,.28);display:flex;gap:9px;align-items:center;font-size:15px}
+#mschat .ms-bubble:hover{background:var(--accent-dark)}
+#mschat .ms-panel{position:absolute;right:0;bottom:66px;width:332px;max-width:86vw;background:#fff;border-radius:18px;box-shadow:0 22px 54px rgba(0,0,0,.30);overflow:hidden;display:none;flex-direction:column}
+#mschat.open .ms-panel{display:flex}
+#mschat .ms-head{background:var(--accent);color:var(--accent-ink);padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+#mschat .ms-head b{font-size:16px;display:block} #mschat .ms-head span{font-size:12px;opacity:.9}
+#mschat .ms-x{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;line-height:1}
+#mschat .ms-body{padding:16px;background:#f6f8fb}
+#mschat .ms-msg{background:#fff;border-radius:14px;padding:12px 14px;font-size:14px;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);margin-bottom:12px}
+#mschat input,#mschat textarea{width:100%;padding:11px 13px;border:1px solid #e2e6ec;border-radius:10px;margin-bottom:9px;font-size:14px;font-family:inherit}
+#mschat textarea{min-height:62px;resize:vertical}
+#mschat .ms-send{width:100%;background:var(--accent);color:var(--accent-ink);border:none;border-radius:10px;padding:12px;font-weight:800;cursor:pointer;font-size:14px}
+#mschat .ms-send:hover{background:var(--accent-dark)}
+#mschat .ms-done{text-align:center;padding:18px 6px;color:var(--primary-dark);font-weight:700;font-size:15px}
+</style>
+<div id="mschat">
+  <div class="ms-panel">
+    <div class="ms-head"><div><b>Advanced Water</b><span>Typically replies in a few minutes</span></div>
+      <button class="ms-x" onclick="msChat(0)" aria-label="Close">&times;</button></div>
+    <div class="ms-body">
+      <div class="ms-msg">Hi! &#128075; Thanks for visiting Advanced Water. Tell us what you need and we will text you right back.</div>
+      <div id="msForm">
+        <input id="msName" placeholder="Your name">
+        <input id="msPhone" placeholder="Phone number">
+        <textarea id="msMsg" placeholder="How can we help?"></textarea>
+        <button class="ms-send" onclick="msSend()">Send</button>
+      </div>
+      <div class="ms-done" id="msDone" style="display:none"></div>
+    </div>
+  </div>
+  <button class="ms-bubble" onclick="msChat()">&#128172; Chat with us</button>
+</div>
+<script>
+function msChat(f){var c=document.getElementById('mschat');if(f===undefined){c.classList.toggle('open');}else{c.classList.toggle('open',!!f);}}
+function msSend(){var v=document.getElementById('msName').value||'there';var n=v.split(' ')[0];document.getElementById('msForm').style.display='none';var d=document.getElementById('msDone');d.style.display='block';d.innerHTML='Thanks '+n+'! &#127881;<br>We got your message and will text you shortly.';}
+</script>
+
+<script>
+document.querySelectorAll('.qa button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var a=this.nextElementSibling, open=a.style.maxHeight && a.style.maxHeight!=='0px';
+    document.querySelectorAll('.qa .ans').forEach(function(x){x.style.maxHeight='0px'});
+    document.querySelectorAll('.qa .ic').forEach(function(x){x.textContent='+'});
+    if(!open){a.style.maxHeight=a.scrollHeight+'px';this.querySelector('.ic').textContent='-';}
+  });
+});
+</script>
+</body></html>
