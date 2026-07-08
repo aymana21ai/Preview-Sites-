@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>All Facets Flooring | Flooring Installation in St. Petersburg, FL</title>
+<meta name="description" content="All Facets Flooring — hardwood, vinyl, laminate, tile &amp; carpet installation in St. Petersburg and Tampa Bay. Locally owned, 5.0-star rated. Free estimates.">
+<style>
+:root{
+  --primary:#2B3440; --primary-dark:#1F2730;
+  --accent:#C0894A; --accent-dark:#A5703A; --accent-ink:#241A0A; --accent-text:#96602E; --logo-h:66px; --quote-logo-h:120px;
+  --ink:#1f2733; --muted:#5b6675; --line:#e7eaef; --bg-soft:#f5f7fa; --white:#fff;
+  --radius:16px; --shadow:0 18px 40px rgba(20,30,50,.10);
+  --font:'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);line-height:1.65;background:var(--white)}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+h1,h2,h3{line-height:1.15;color:var(--primary-dark)}
+h2{font-size:34px;margin-bottom:10px}
+.eyebrow{color:var(--accent-text);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:10px}
+.center{text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;line-height:1;background:var(--accent);color:var(--accent-ink);font-weight:800;padding:15px 30px;border-radius:12px;
+  border:none;cursor:pointer;font-size:15px;letter-spacing:.3px;transition:.18s;box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.btn:hover{background:var(--accent-dark);transform:translateY(-2px)}
+.btn-sm{padding:10px 20px;font-size:14px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.10)}
+.btn-light{background:#fff;color:var(--primary-dark)}
+
+header{position:sticky;top:0;z-index:60;background:#fff;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:21px;color:var(--primary-dark)}
+.brand img{height:var(--logo-h);width:auto;max-height:110px}
+.navlinks{display:flex;gap:26px;font-weight:600}
+.navlinks a:hover{color:var(--accent)}
+.navside{display:flex;align-items:center;gap:18px}
+.phone{font-weight:800;color:var(--primary-dark);white-space:nowrap}
+@media(max-width:920px){.navlinks,.phone{display:none}}
+
+.hero{position:relative;color:#fff;background:linear-gradient(rgba(18,26,40,.62),rgba(18,26,40,.72)),url('https://images.pexels.com/photos/7027840/pexels-photo-7027840.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding:96px 0}
+.hero h1{color:#fff;font-size:48px;margin-bottom:8px}
+.hero .lede{font-size:25px;font-weight:600;opacity:.96;margin-bottom:14px}
+.hero p.sub{font-size:17px;opacity:.92;max-width:520px;margin-bottom:26px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.badges span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:30px;font-size:13px;font-weight:600}
+.quote{background:#fff;color:var(--ink);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.quote-logo{height:var(--quote-logo-h);max-height:190px;width:auto;margin:0 auto 16px;display:block}
+.quote h3{text-align:center;font-size:23px;margin-bottom:3px}
+.quote .qs{text-align:center;color:var(--muted);font-size:14px;margin-bottom:18px}
+.field{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;margin-bottom:12px;font-size:15px;font-family:inherit}
+textarea.field{min-height:84px;resize:vertical}
+.consent{font-size:11px;color:var(--muted);margin:4px 0 14px}
+.quote .btn{width:100%}
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr;padding:56px 0}.hero h1{font-size:34px}.hero .lede{font-size:20px}}
+
+.trust{background:var(--primary-dark);color:#fff}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:space-around;gap:16px;padding:22px}
+.trust b{font-size:15px;letter-spacing:.5px;text-transform:uppercase;display:flex;gap:9px;align-items:center}
+.trust b::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--accent)}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-grid img{border-radius:var(--radius);height:420px;width:100%;object-fit:cover;box-shadow:var(--shadow)}
+.about p{color:var(--muted);font-size:17px;margin-top:8px}
+@media(max-width:920px){.about-grid{grid-template-columns:1fr}.about-grid img{height:280px}}
+
+.services{background:var(--bg-soft)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.2s}
+.card:hover{transform:translateY(-6px)}
+.card img{height:190px;width:100%;object-fit:cover}
+.card .cb{padding:22px}
+.card h3{font-size:20px;margin-bottom:8px;color:var(--primary-dark)}
+.card p{color:var(--muted);font-size:14.5px}
+@media(max-width:920px){.cards{grid-template-columns:1fr}}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:42px}
+.step{text-align:center}
+.step .n{width:66px;height:66px;border-radius:50%;background:var(--primary);color:#fff;font-size:26px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.step h3{margin-bottom:6px} .step p{color:var(--muted);font-size:15px}
+@media(max-width:920px){.steps{grid-template-columns:1fr}}
+
+.gallery{background:var(--bg-soft)}
+.grid-imgs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+.grid-imgs img{height:180px;width:100%;object-fit:cover;border-radius:12px}
+@media(max-width:920px){.grid-imgs{grid-template-columns:repeat(2,1fr)}}
+
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.review{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.stars{color:#f5b50a;font-size:18px;margin-bottom:10px}
+.review p{color:#39424f;font-size:15px} .review .who{margin-top:14px;font-weight:800;color:var(--primary-dark)}
+@media(max-width:920px){.rev{grid-template-columns:1fr}}
+
+.faq{max-width:840px;margin:36px auto 0}
+.qa{border-bottom:1px solid var(--line)}
+.qa button{width:100%;text-align:left;background:none;border:none;padding:20px 0;font-size:17px;font-weight:700;
+  color:var(--primary-dark);cursor:pointer;display:flex;justify-content:space-between;gap:16px;font-family:inherit}
+.qa .ic{color:var(--accent-text);font-size:24px;line-height:1}
+.qa .ans{max-height:0;overflow:hidden;transition:max-height .28s ease}
+.qa .ans p{padding-bottom:18px;color:var(--muted);font-size:15.5px}
+
+.areas{background:var(--primary-dark);color:#fff}
+.areas h2{color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.chips span{background:rgba(255,255,255,.12);padding:10px 20px;border-radius:30px;font-weight:600}
+
+.final{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;text-align:center}
+.final h2{color:#fff;font-size:38px} .final p{font-size:19px;opacity:.95;margin:10px 0 26px}
+
+footer{background:#161d28;color:#aab4c2;padding:56px 0 26px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;text-transform:uppercase;letter-spacing:1px;font-size:15px;margin-bottom:14px}
+footer a{display:block;margin-bottom:7px} footer a:hover{color:#fff}
+.fbrand{font-weight:800;font-size:21px;color:#fff;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.fbrand img{height:38px}
+.fbot{border-top:1px solid #2a3340;margin-top:34px;padding-top:18px;text-align:center;color:#7f8a99;font-size:13px}
+@media(max-width:920px){.fgrid{grid-template-columns:1fr 1fr}}
+</style></head>
+<body>
+
+<header><div class="wrap"><nav>
+  <a href="#home" class="brand"><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22320%22%20height%3D%2260%22%20viewBox%3D%220%200%20320%2060%22%3E%3Crect%20x%3D%222%22%20y%3D%228%22%20width%3D%2244%22%20height%3D%2244%22%20rx%3D%228%22%20fill%3D%22%232B3440%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2218%22%20width%3D%2228%22%20height%3D%225%22%20rx%3D%222%22%20fill%3D%22%23C0894A%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2227%22%20width%3D%2228%22%20height%3D%225%22%20rx%3D%222%22%20fill%3D%22%23C0894A%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2236%22%20width%3D%2228%22%20height%3D%225%22%20rx%3D%222%22%20fill%3D%22%23C0894A%22/%3E%3Ctext%20x%3D%2256%22%20y%3D%2230%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2221%22%20font-weight%3D%22700%22%20fill%3D%22%232B3440%22%3EAll%20Facets%3C/text%3E%3Ctext%20x%3D%2256%22%20y%3D%2248%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22700%22%20fill%3D%22%23C0894A%22%20letter-spacing%3D%223%22%3EFLOORING%3C/text%3E%3C/svg%3E" alt="All Facets Flooring"></a>
+  <div class="navlinks">
+    <a href="#services">Services</a><a href="#about">About</a>
+    <a href="#gallery">Gallery</a><a href="#areas">Areas</a><a href="#contact">Contact</a>
+  </div>
+  <div class="navside"><span class="phone">(727) 919-6176</span><a href="#contact" class="btn btn-sm">Free Quote</a></div>
+</nav></div></header>
+
+<section class="hero" id="home"><div class="wrap"><div class="hero-grid">
+  <div>
+    <h1>Flooring Installation in St. Petersburg</h1>
+    <div class="lede">Floors You&#x27;ll Be Proud to Walk On</div>
+    <p class="sub">Hardwood, luxury vinyl, laminate, tile, and carpet installed with craftsmanship and honest, no-pressure service across St. Petersburg and Tampa Bay. Free estimates.</p>
+    <a href="#contact" class="btn">Get a Free Quote</a>
+    <div class="badges"><span>5.0★ on Google</span><span>Locally Owned</span><span>Free Estimates</span><span>No-Pressure Options</span></div>
+  </div>
+  <div class="quote" id="contact">
+    <img class="quote-logo" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22320%22%20height%3D%2260%22%20viewBox%3D%220%200%20320%2060%22%3E%3Crect%20x%3D%222%22%20y%3D%228%22%20width%3D%2244%22%20height%3D%2244%22%20rx%3D%228%22%20fill%3D%22%232B3440%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2218%22%20width%3D%2228%22%20height%3D%225%22%20rx%3D%222%22%20fill%3D%22%23C0894A%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2227%22%20width%3D%2228%22%20height%3D%225%22%20rx%3D%222%22%20fill%3D%22%23C0894A%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2236%22%20width%3D%2228%22%20height%3D%225%22%20rx%3D%222%22%20fill%3D%22%23C0894A%22/%3E%3Ctext%20x%3D%2256%22%20y%3D%2230%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2221%22%20font-weight%3D%22700%22%20fill%3D%22%232B3440%22%3EAll%20Facets%3C/text%3E%3Ctext%20x%3D%2256%22%20y%3D%2248%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22700%22%20fill%3D%22%23C0894A%22%20letter-spacing%3D%223%22%3EFLOORING%3C/text%3E%3C/svg%3E" alt="All Facets Flooring"><h3>Get a Free Quote</h3><div class="qs">We'll get back to you the same day.</div>
+    <input class="field" placeholder="Full Name *">
+    <input class="field" placeholder="Phone *">
+    <textarea class="field" placeholder="Tell us about your project *"></textarea>
+    <div class="consent">By providing your phone number you agree to receive text messages from All Facets Flooring.</div>
+    <button class="btn">Send</button>
+  </div>
+</div></div></section>
+
+<div class="trust"><div class="wrap"><b>5.0-Star Rated</b><b>Locally Owned</b><b>Free Estimates</b><b>Honest &amp; Professional</b></div></div>
+
+<section class="about" id="about"><div class="wrap about-grid">
+  <img src="https://images.pexels.com/photos/6835181/pexels-photo-6835181.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="All Facets Flooring">
+  <div><div class="eyebrow">About Us</div><h2>Flooring Done Right, By People You Can Trust</h2><p>All Facets Flooring is a locally owned flooring contractor serving St. Petersburg and the greater Tampa Bay area. Led by John, our team handles everything from hardwood, luxury vinyl, and laminate to tile and carpet — with honest advice, no-pressure options, and clean, precise installation. Our customers know us for professional, honest work and floors they&#x27;re proud of, done right and on your timeline.</p>
+    <p style="margin-top:14px"><a href="#contact" class="btn">Get a Free Quote</a></p></div>
+</div></section>
+
+<section class="services" id="services"><div class="wrap center">
+  <div class="eyebrow">Our Services</div><h2>Flooring We Install &amp; Repair</h2>
+  <div class="cards" style="text-align:left"><div class="card"><img src="https://images.pexels.com/photos/12510533/pexels-photo-12510533.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Hardwood Flooring"><div class="cb"><h3>Hardwood Flooring</h3><p>Timeless solid and engineered hardwood installed with precision for warmth, character, and lasting value in every room.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/11126101/pexels-photo-11126101.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Luxury Vinyl Plank"><div class="cb"><h3>Luxury Vinyl Plank</h3><p>Waterproof, scratch-resistant LVP that delivers the look of real wood with the durability busy homes and pets demand.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/3616756/pexels-photo-3616756.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Laminate Flooring"><div class="cb"><h3>Laminate Flooring</h3><p>Affordable, stylish laminate installed with tight seams and a flawless finish that refreshes any space.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/6175107/pexels-photo-6175107.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Tile Flooring"><div class="cb"><h3>Tile Flooring</h3><p>Precise tile installation for kitchens, baths, and entryways with clean lines and durable, long-lasting results.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/37357033/pexels-photo-37357033.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Carpet"><div class="cb"><h3>Carpet</h3><p>Soft, comfortable carpet installed cleanly wall-to-wall for cozy bedrooms, living rooms, and stairs.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/5583096/pexels-photo-5583096.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Flooring Repair &amp; Refinishing"><div class="cb"><h3>Flooring Repair &amp; Refinishing</h3><p>Repairs, board replacement, and refinishing that bring tired or damaged floors back to like-new condition.</p></div></div></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">The Process</div><h2>Simple 3-Step Process</h2>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>Contact Us</h3><p>Fill out the free quote form and tell us about your project.</p></div>
+    <div class="step"><div class="n">2</div><h3>Free Estimate</h3><p>We visit at a time that works for you and provide a clear, honest estimate.</p></div>
+    <div class="step"><div class="n">3</div><h3>Get It Done</h3><p>Approve the estimate and we schedule the work and deliver results you'll love.</p></div>
+  </div>
+</div></section>
+
+<section class="gallery" id="gallery"><div class="wrap center">
+  <div class="eyebrow">Our Work</div><h2>Recent Projects</h2>
+  <div class="grid-imgs"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEUXL9ImTUEXeMOraGsBmJA3Cj1Pc9wia8-Zx9Q9lLISITa7JHv8Wm8OwHWMCl6gFQ37YYxpixP-D9Y6a9fL3svvCQ5zHhsOchCguijNotmvxIh1bB368LFabSuyHKfCOdXUlArhBNJE8sx=w1000-h750" alt="All Facets Flooring project"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHCi1NP_k6JgtYk9THWBADQgTnOGBVCdliyDQpqSkrFzMy6V9ASsHsMcHDx_67QbzVZ5H3hJMfoBgH6ecATuMy8PnzOaBwdAd3H50fsaIUhJJczXThy8syKx174V-YnNCAjHP6x5TL2J5I2=w1000-h750" alt="All Facets Flooring project"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAG0mvb_ihLurBsHic8ISs-2Oe9GO7BbQiujPlsEnKoSE9pW3lgrvZqQhI7wtLnxEl8PUeU9doCaBscgc-JUx2PVnTODuUY74ocs3db1mWDIQa89ZA-iqcTOCsjHDhyNPF0OQT_sydbg_cR4=w1000-h750" alt="All Facets Flooring project"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFGLEIzKSSF2kXeBzxdh5MZkD7KTVWwv7dzNikkQrv3p9yceALkRNUK45vvKeF_PutZM7kw3apvdX69vSca6tELWd6Kd4BLmgOFqiWq7NB-pOHVfb_zuKtx79_Vq6avuvOza2vShbGuuSDK=w1000-h750" alt="All Facets Flooring project"></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">Reviews</div><h2>What Customers Say</h2>
+  <div class="rev" style="text-align:left"><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>One of the best decisions I ever made was contacting John. I was in a pinch to get flooring done fast — John gave me a few options with no pressure, and I&#x27;m so glad I went with him.</p><div class="who">&mdash; Michael A.</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>I couldn&#x27;t be happier with my floors! John and his team do a great job — very professional and very honest. I&#x27;ll certainly do business with them again. Highly recommend.</p><div class="who">&mdash; Heather Hytner</div></div></div>
+</div></section>
+
+<section class="services"><div class="wrap">
+  <h2 class="center">Frequently Asked Questions</h2>
+  <div class="faq"><div class="qa"><button>Do you offer free estimates?<span class="ic">+</span></button><div class="ans"><p>Yes — All Facets Flooring provides free, no-obligation, no-pressure estimates. Reach out and we&#x27;ll walk you through your options.</p></div></div><div class="qa"><button>What types of flooring do you install?<span class="ic">+</span></button><div class="ans"><p>Hardwood, luxury vinyl plank, laminate, tile, and carpet — plus flooring repair and refinishing for existing floors.</p></div></div><div class="qa"><button>What areas do you serve?<span class="ic">+</span></button><div class="ans"><p>We&#x27;re based in St. Petersburg and serve the greater Tampa Bay area, including Clearwater, Largo, Pinellas Park, and nearby communities.</p></div></div><div class="qa"><button>How fast can you start?<span class="ic">+</span></button><div class="ans"><p>We pride ourselves on quick turnarounds — reach out and we&#x27;ll work with your timeline to get your floors done fast.</p></div></div></div>
+</div></section>
+
+<section class="areas" id="areas"><div class="wrap center">
+  <div class="eyebrow" style="color:var(--accent-text)">Service Area</div>
+  <h2>Proudly Serving St. Petersburg &amp; Nearby</h2>
+  <div class="chips"><span>St. Petersburg</span><span>Clearwater</span><span>Largo</span><span>Pinellas Park</span><span>Seminole</span><span>Gulfport</span><span>St. Pete Beach</span><span>Kenneth City</span><span>Treasure Island</span><span>Tampa</span></div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Ready to Get Started?</h2><p>Get your free flooring quote today.</p>
+  <a href="#contact" class="btn btn-light">Get a Free Quote</a>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><div class="fbrand"><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22320%22%20height%3D%2260%22%20viewBox%3D%220%200%20320%2060%22%3E%3Crect%20x%3D%222%22%20y%3D%228%22%20width%3D%2244%22%20height%3D%2244%22%20rx%3D%228%22%20fill%3D%22%232B3440%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2218%22%20width%3D%2228%22%20height%3D%225%22%20rx%3D%222%22%20fill%3D%22%23C0894A%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2227%22%20width%3D%2228%22%20height%3D%225%22%20rx%3D%222%22%20fill%3D%22%23C0894A%22/%3E%3Crect%20x%3D%2210%22%20y%3D%2236%22%20width%3D%2228%22%20height%3D%225%22%20rx%3D%222%22%20fill%3D%22%23C0894A%22/%3E%3Ctext%20x%3D%2256%22%20y%3D%2230%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2221%22%20font-weight%3D%22700%22%20fill%3D%22%232B3440%22%3EAll%20Facets%3C/text%3E%3Ctext%20x%3D%2256%22%20y%3D%2248%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2213%22%20font-weight%3D%22700%22%20fill%3D%22%23C0894A%22%20letter-spacing%3D%223%22%3EFLOORING%3C/text%3E%3C/svg%3E" alt="All Facets Flooring"></div>
+      <p>Quality flooring services across St. Petersburg and the surrounding area.</p>
+      <p style="margin-top:12px;color:#fff;font-weight:700">(727) 919-6176</p></div>
+    <div><h4>Company</h4><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+    <div><h4>Services</h4><a href="#services">Hardwood Flooring</a><a href="#services">Luxury Vinyl Plank</a><a href="#services">Laminate Flooring</a><a href="#services">Tile Flooring</a><a href="#services">Carpet</a></div>
+    <div><h4>Hours</h4><p>Mon-Sat: 8am - 6pm</p><p>Sun: Closed</p></div>
+  </div>
+  <div class="fbot">&copy; 2026 All Facets Flooring. All rights reserved.</div>
+</div></footer>
+
+<style>
+#mschat{position:fixed;right:22px;bottom:22px;z-index:90;font-family:var(--font)}
+#mschat .ms-bubble{background:var(--accent);color:var(--accent-ink);font-weight:800;border:none;cursor:pointer;padding:14px 22px 14px 18px;border-radius:40px;box-shadow:0 10px 26px rgba(0,0,0,.28);display:flex;gap:9px;align-items:center;font-size:15px}
+#mschat .ms-bubble:hover{background:var(--accent-dark)}
+#mschat .ms-panel{position:absolute;right:0;bottom:66px;width:332px;max-width:86vw;background:#fff;border-radius:18px;box-shadow:0 22px 54px rgba(0,0,0,.30);overflow:hidden;display:none;flex-direction:column}
+#mschat.open .ms-panel{display:flex}
+#mschat .ms-head{background:var(--accent);color:var(--accent-ink);padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+#mschat .ms-head b{font-size:16px;display:block} #mschat .ms-head span{font-size:12px;opacity:.9}
+#mschat .ms-x{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;line-height:1}
+#mschat .ms-body{padding:16px;background:#f6f8fb}
+#mschat .ms-msg{background:#fff;border-radius:14px;padding:12px 14px;font-size:14px;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);margin-bottom:12px}
+#mschat input,#mschat textarea{width:100%;padding:11px 13px;border:1px solid #e2e6ec;border-radius:10px;margin-bottom:9px;font-size:14px;font-family:inherit}
+#mschat textarea{min-height:62px;resize:vertical}
+#mschat .ms-send{width:100%;background:var(--accent);color:var(--accent-ink);border:none;border-radius:10px;padding:12px;font-weight:800;cursor:pointer;font-size:14px}
+#mschat .ms-send:hover{background:var(--accent-dark)}
+#mschat .ms-done{text-align:center;padding:18px 6px;color:var(--primary-dark);font-weight:700;font-size:15px}
+</style>
+<div id="mschat">
+  <div class="ms-panel">
+    <div class="ms-head"><div><b>All Facets Flooring</b><span>Typically replies in a few minutes</span></div>
+      <button class="ms-x" onclick="msChat(0)" aria-label="Close">&times;</button></div>
+    <div class="ms-body">
+      <div class="ms-msg">Hi! &#128075; Thanks for visiting All Facets Flooring. Tell us what you need and we will text you right back.</div>
+      <div id="msForm">
+        <input id="msName" placeholder="Your name">
+        <input id="msPhone" placeholder="Phone number">
+        <textarea id="msMsg" placeholder="How can we help?"></textarea>
+        <button class="ms-send" onclick="msSend()">Send</button>
+      </div>
+      <div class="ms-done" id="msDone" style="display:none"></div>
+    </div>
+  </div>
+  <button class="ms-bubble" onclick="msChat()">&#128172; Chat with us</button>
+</div>
+<script>
+function msChat(f){var c=document.getElementById('mschat');if(f===undefined){c.classList.toggle('open');}else{c.classList.toggle('open',!!f);}}
+function msSend(){var v=document.getElementById('msName').value||'there';var n=v.split(' ')[0];document.getElementById('msForm').style.display='none';var d=document.getElementById('msDone');d.style.display='block';d.innerHTML='Thanks '+n+'! &#127881;<br>We got your message and will text you shortly.';}
+</script>
+
+<script>
+document.querySelectorAll('.qa button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var a=this.nextElementSibling, open=a.style.maxHeight && a.style.maxHeight!=='0px';
+    document.querySelectorAll('.qa .ans').forEach(function(x){x.style.maxHeight='0px'});
+    document.querySelectorAll('.qa .ic').forEach(function(x){x.textContent='+'});
+    if(!open){a.style.maxHeight=a.scrollHeight+'px';this.querySelector('.ic').textContent='-';}
+  });
+});
+</script>
+</body></html>
