@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DadeAppliance | Appliance Repair in Homestead &amp; South Miami-Dade, FL</title>
+<meta name="description" content="DadeAppliance — trusted appliance repair in Homestead and South Miami-Dade, FL. Refrigerator, washer, dryer, oven, stove &amp; dishwasher repair. 4.7 stars from 600+ reviews. Same-day service, free estimates, se habla espanol.">
+<style>
+:root{
+  --primary:#0E3E6B; --primary-dark:#0A2E50;
+  --accent:#1976D2; --accent-dark:#145CA0; --accent-ink:#ffffff; --accent-text:#1565C0; --logo-h:62px; --quote-logo-h:130px;
+  --ink:#1f2733; --muted:#5b6675; --line:#e7eaef; --bg-soft:#f5f7fa; --white:#fff;
+  --radius:16px; --shadow:0 18px 40px rgba(20,30,50,.10);
+  --font:'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);line-height:1.65;background:var(--white)}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+h1,h2,h3{line-height:1.15;color:var(--primary-dark)}
+h2{font-size:34px;margin-bottom:10px}
+.eyebrow{color:var(--accent-text);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:10px}
+.center{text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;line-height:1;background:var(--accent);color:var(--accent-ink);font-weight:800;padding:15px 30px;border-radius:12px;
+  border:none;cursor:pointer;font-size:15px;letter-spacing:.3px;transition:.18s;box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.btn:hover{background:var(--accent-dark);transform:translateY(-2px)}
+.btn-sm{padding:10px 20px;font-size:14px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.10)}
+.btn-light{background:#fff;color:var(--primary-dark)}
+
+header{position:sticky;top:0;z-index:60;background:#fff;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:21px;color:var(--primary-dark)}
+.brand img{height:var(--logo-h);width:auto;max-height:110px}
+.navlinks{display:flex;gap:26px;font-weight:600}
+.navlinks a:hover{color:var(--accent)}
+.navside{display:flex;align-items:center;gap:18px}
+.phone{font-weight:800;color:var(--primary-dark);white-space:nowrap}
+@media(max-width:920px){.navlinks,.phone{display:none}}
+
+.hero{position:relative;color:#fff;background:linear-gradient(rgba(18,26,40,.62),rgba(18,26,40,.72)),url('https://images.pexels.com/photos/38190070/pexels-photo-38190070.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding:96px 0}
+.hero h1{color:#fff;font-size:48px;margin-bottom:8px}
+.hero .lede{font-size:25px;font-weight:600;opacity:.96;margin-bottom:14px}
+.hero p.sub{font-size:17px;opacity:.92;max-width:520px;margin-bottom:26px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.badges span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:30px;font-size:13px;font-weight:600}
+.quote{background:#fff;color:var(--ink);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.quote-logo{height:var(--quote-logo-h);max-height:190px;width:auto;margin:0 auto 16px;display:block}
+.quote h3{text-align:center;font-size:23px;margin-bottom:3px}
+.quote .qs{text-align:center;color:var(--muted);font-size:14px;margin-bottom:18px}
+.field{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;margin-bottom:12px;font-size:15px;font-family:inherit}
+textarea.field{min-height:84px;resize:vertical}
+.consent{font-size:11px;color:var(--muted);margin:4px 0 14px}
+.quote .btn{width:100%}
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr;padding:56px 0}.hero h1{font-size:34px}.hero .lede{font-size:20px}}
+
+.trust{background:var(--primary-dark);color:#fff}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:space-around;gap:16px;padding:22px}
+.trust b{font-size:15px;letter-spacing:.5px;text-transform:uppercase;display:flex;gap:9px;align-items:center}
+.trust b::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--accent)}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-grid img{border-radius:var(--radius);height:420px;width:100%;object-fit:cover;box-shadow:var(--shadow)}
+.about p{color:var(--muted);font-size:17px;margin-top:8px}
+@media(max-width:920px){.about-grid{grid-template-columns:1fr}.about-grid img{height:280px}}
+
+.services{background:var(--bg-soft)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.2s}
+.card:hover{transform:translateY(-6px)}
+.card img{height:190px;width:100%;object-fit:cover}
+.card .cb{padding:22px}
+.card h3{font-size:20px;margin-bottom:8px;color:var(--primary-dark)}
+.card p{color:var(--muted);font-size:14.5px}
+@media(max-width:920px){.cards{grid-template-columns:1fr}}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:42px}
+.step{text-align:center}
+.step .n{width:66px;height:66px;border-radius:50%;background:var(--primary);color:#fff;font-size:26px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.step h3{margin-bottom:6px} .step p{color:var(--muted);font-size:15px}
+@media(max-width:920px){.steps{grid-template-columns:1fr}}
+
+.gallery{background:var(--bg-soft)}
+.grid-imgs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+.grid-imgs img{height:180px;width:100%;object-fit:cover;border-radius:12px}
+@media(max-width:920px){.grid-imgs{grid-template-columns:repeat(2,1fr)}}
+
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.review{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.stars{color:#f5b50a;font-size:18px;margin-bottom:10px}
+.review p{color:#39424f;font-size:15px} .review .who{margin-top:14px;font-weight:800;color:var(--primary-dark)}
+@media(max-width:920px){.rev{grid-template-columns:1fr}}
+
+.faq{max-width:840px;margin:36px auto 0}
+.qa{border-bottom:1px solid var(--line)}
+.qa button{width:100%;text-align:left;background:none;border:none;padding:20px 0;font-size:17px;font-weight:700;
+  color:var(--primary-dark);cursor:pointer;display:flex;justify-content:space-between;gap:16px;font-family:inherit}
+.qa .ic{color:var(--accent-text);font-size:24px;line-height:1}
+.qa .ans{max-height:0;overflow:hidden;transition:max-height .28s ease}
+.qa .ans p{padding-bottom:18px;color:var(--muted);font-size:15.5px}
+
+.areas{background:var(--primary-dark);color:#fff}
+.areas h2{color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.chips span{background:rgba(255,255,255,.12);padding:10px 20px;border-radius:30px;font-weight:600}
+
+.final{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;text-align:center}
+.final h2{color:#fff;font-size:38px} .final p{font-size:19px;opacity:.95;margin:10px 0 26px}
+
+footer{background:#161d28;color:#aab4c2;padding:56px 0 26px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;text-transform:uppercase;letter-spacing:1px;font-size:15px;margin-bottom:14px}
+footer a{display:block;margin-bottom:7px} footer a:hover{color:#fff}
+.fbrand{font-weight:800;font-size:21px;color:#fff;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.fbrand img{height:38px}
+.fbot{border-top:1px solid #2a3340;margin-top:34px;padding-top:18px;text-align:center;color:#7f8a99;font-size:13px}
+@media(max-width:920px){.fgrid{grid-template-columns:1fr 1fr}}
+</style></head>
+<body>
+
+<header><div class="wrap"><nav>
+  <a href="#home" class="brand">DadeAppliance</a>
+  <div class="navlinks">
+    <a href="#services">Services</a><a href="#about">About</a>
+    <a href="#gallery">Gallery</a><a href="#areas">Areas</a><a href="#contact">Contact</a>
+  </div>
+  <div class="navside"><span class="phone">(786) 241-1465</span><a href="#contact" class="btn btn-sm">Free Quote</a></div>
+</nav></div></header>
+
+<section class="hero" id="home"><div class="wrap"><div class="hero-grid">
+  <div>
+    <h1>Appliance Repair in Homestead, FL</h1>
+    <div class="lede">Same-Day Appliance Repair You Can Trust</div>
+    <p class="sub">Fast, reliable repair for refrigerators, washers, dryers, ovens, stoves, and dishwashers across Homestead and South Miami-Dade. 11 years of experience, 600+ five-star reviews, free estimates, and same-day service. Se habla espanol.</p>
+    <a href="#contact" class="btn">Get a Free Quote</a>
+    <div class="badges"><span>4.7★ · 600+ Reviews</span><span>Same-Day Service</span><span>Free Estimates</span><span>Se Habla Espanol</span></div>
+  </div>
+  <div class="quote" id="contact">
+    <h3>Get a Free Quote</h3><div class="qs">We'll get back to you the same day.</div>
+    <input class="field" placeholder="Full Name *">
+    <input class="field" placeholder="Phone *">
+    <textarea class="field" placeholder="Tell us about your project *"></textarea>
+    <div class="consent">By providing your phone number you agree to receive text messages from DadeAppliance.</div>
+    <button class="btn">Send</button>
+  </div>
+</div></div></section>
+
+<div class="trust"><div class="wrap"><b>4.7★ on HomeAdvisor (600+)</b><b>11 Years Experience</b><b>Free Estimates</b><b>Se Habla Espanol</b></div></div>
+
+<section class="about" id="about"><div class="wrap about-grid">
+  <img src="https://images.pexels.com/photos/37492290/pexels-photo-37492290.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="DadeAppliance">
+  <div><div class="eyebrow">About Us</div><h2>Homestead&#x27;s Trusted Appliance Pros</h2><p>DadeAppliance has been repairing home appliances across Homestead and South Miami-Dade for over 11 years. Owner Jose Herrera and his team fix refrigerators, freezers, ice makers, washers, dryers, ovens, stoves, and dishwashers — usually the same day, and often with the right part already on the truck. With more than 600 five-star reviews, free estimates, warranties on our work, and emergency service when you need it, we&#x27;ve built our reputation on fast, honest, professional repairs. Se habla espanol.</p>
+    <p style="margin-top:14px"><a href="#contact" class="btn">Get a Free Quote</a></p></div>
+</div></section>
+
+<section class="services" id="services"><div class="wrap center">
+  <div class="eyebrow">Our Services</div><h2>Appliances We Repair</h2>
+  <div class="cards" style="text-align:left"><div class="card"><img src="https://images.pexels.com/photos/4221389/pexels-photo-4221389.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Refrigerator, Freezer &amp; Ice Maker Repair"><div class="cb"><h3>Refrigerator, Freezer &amp; Ice Maker Repair</h3><p>Not cooling, leaking, or the ice maker&#x27;s out? We diagnose and repair all refrigerator, freezer, and ice maker brands — often the same day.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/3935334/pexels-photo-3935334.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Washer &amp; Dryer Repair"><div class="cb"><h3>Washer &amp; Dryer Repair</h3><p>Won&#x27;t spin, drain, or heat? We fix washers and dryers fast — from drain pumps to heating elements — on all major brands.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/26546536/pexels-photo-26546536.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Oven, Stove &amp; Range Repair"><div class="cb"><h3>Oven, Stove &amp; Range Repair</h3><p>Burners, bake elements, igniters, and controls — we get your oven, stove, and range cooking again quickly and safely.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/5018049/pexels-photo-5018049.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Dishwasher Repair"><div class="cb"><h3>Dishwasher Repair</h3><p>Leaks, drainage problems, or not cleaning right? We repair dishwashers of every make so your kitchen runs smoothly again.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/6835090/pexels-photo-6835090.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Appliance Installation &amp; Replacement"><div class="cb"><h3>Appliance Installation &amp; Replacement</h3><p>Installing a new appliance or replacing an old one? We handle setup and replacement cleanly and correctly the first time.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/32588545/pexels-photo-32588545.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Emergency &amp; Same-Day Service"><div class="cb"><h3>Emergency &amp; Same-Day Service</h3><p>Appliance emergency? We offer same-day and emergency repair so you&#x27;re never stuck without the essentials for long.</p></div></div></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">The Process</div><h2>Simple 3-Step Process</h2>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>Contact Us</h3><p>Fill out the free quote form and tell us about your project.</p></div>
+    <div class="step"><div class="n">2</div><h3>Free Estimate</h3><p>We visit at a time that works for you and provide a clear, honest estimate.</p></div>
+    <div class="step"><div class="n">3</div><h3>Get It Done</h3><p>Approve the estimate and we schedule the work and deliver results you'll love.</p></div>
+  </div>
+</div></section>
+
+<section class="gallery" id="gallery"><div class="wrap center">
+  <div class="eyebrow">Our Work</div><h2>Recent Projects</h2>
+  <div class="grid-imgs"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFWdAE9EBX-T-dgIljujD8tQHmOl1AjbhtyVZP_j40xoi1n4241hMOqVDmGY1wHXYxadBTutp_SwyZuMHAeZA2DUBbMV60tgGcebrNVvb2SUI-Ee7M7U37Ja5nk6gYae29GIOPUElmFxsw=w1000-h750" alt="DadeAppliance project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlEnOqQ4PoTUCWc958RxoLo4C5RgDyF6zUGpEd4xfBr5GAJKtn9aT1G1GA6tzX0Tu5AN84u-4bv9AxaMHCTjh8NP6yaCdY7Zjxtv-Tt43HnE1UtU9pm5P4fXtUysZv0ephcyBBMtTMr5PIU=w1000-h750" alt="DadeAppliance project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm6zpjE7Dd8RcYduRSXKHZ1CqTT92p-KXLJaDlmzajCMiJ2XlkFCkJEpzeB6CTVaPtbkQtJC0sMNe4W53ONUhtAUUHHfAy08MYieACDhBleyu1AWuRGAAZqLbFFZIuPsK6NAsOEmZVhvOA=w1000-h750" alt="DadeAppliance project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmJ1SpsfkJMF6PXpitTfgk_sI46kws0R0fyvIGYccmEYo-DCEKbRFBlELBQFVOWa9DfOYGRQRN11pm5n4-s9o9Zw_VfUL1IbYpMq1-qTy_6cVSkaLOHTtq-FYNs--VyrzyhiTwxlz1_n7Qw=w1000-h750" alt="DadeAppliance project"><img src="https://images.pexels.com/photos/8289912/pexels-photo-8289912.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="DadeAppliance project"><img src="https://images.pexels.com/photos/4221389/pexels-photo-4221389.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="DadeAppliance project"><img src="https://images.pexels.com/photos/3935334/pexels-photo-3935334.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="DadeAppliance project"><img src="https://images.pexels.com/photos/5018049/pexels-photo-5018049.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="DadeAppliance project"></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">Reviews</div><h2>What Customers Say</h2>
+  <div class="rev" style="text-align:left"><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Washer needed a new drain pump. Jose Herrera gave me a next-day appointment and fixed it fast and efficiently — he even took care of the garbage disposal that wasn&#x27;t working. I highly recommend him for all your appliance repairs.</p><div class="who">&mdash; Mari E.</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Jose said he could come by the same day. When it turned out to be the compressor, his associate Julio had the fridge fixed by 2PM the next day. Great communication — I&#x27;m very happy with the repair.</p><div class="who">&mdash; Eric M.</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Jose arrived right on time, explained the problem, and fixed the refrigerator in less than an hour. Very reasonable price, courteous and friendly. I&#x27;ll definitely keep him in my contacts!</p><div class="who">&mdash; Lizette T.</div></div></div>
+</div></section>
+
+<section class="services"><div class="wrap">
+  <h2 class="center">Frequently Asked Questions</h2>
+  <div class="faq"><div class="qa"><button>What appliances do you repair?<span class="ic">+</span></button><div class="ans"><p>Refrigerators, freezers, ice makers, washers, dryers, ovens, stoves, ranges, and dishwashers — all major brands.</p></div></div><div class="qa"><button>Do you offer same-day service?<span class="ic">+</span></button><div class="ans"><p>Yes. We offer same-day and emergency appliance repair, and we often carry the most common parts right on the truck.</p></div></div><div class="qa"><button>Do you charge for estimates?<span class="ic">+</span></button><div class="ans"><p>No — we offer free estimates on all appliance repairs.</p></div></div><div class="qa"><button>What areas do you serve?<span class="ic">+</span></button><div class="ans"><p>We&#x27;re based in Homestead and serve South Miami-Dade, including Florida City, Princeton, Cutler Bay, and Kendall.</p></div></div></div>
+</div></section>
+
+<section class="areas" id="areas"><div class="wrap center">
+  <div class="eyebrow" style="color:var(--accent-text)">Service Area</div>
+  <h2>Proudly Serving Homestead &amp; Nearby</h2>
+  <div class="chips"><span>Homestead</span><span>Florida City</span><span>Princeton</span><span>Naranja</span><span>Leisure City</span><span>Cutler Bay</span><span>Palmetto Bay</span><span>Kendall</span><span>Richmond Heights</span><span>South Miami</span></div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Ready to Get Started?</h2><p>Get your free appliance repair quote today.</p>
+  <a href="#contact" class="btn btn-light">Get a Free Quote</a>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><div class="fbrand">DadeAppliance</div>
+      <p>Quality appliance repair services across Homestead and the surrounding area.</p>
+      <p style="margin-top:12px;color:#fff;font-weight:700">(786) 241-1465</p></div>
+    <div><h4>Company</h4><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+    <div><h4>Services</h4><a href="#services">Refrigerator, Freezer &amp; Ice Maker Repair</a><a href="#services">Washer &amp; Dryer Repair</a><a href="#services">Oven, Stove &amp; Range Repair</a><a href="#services">Dishwasher Repair</a><a href="#services">Appliance Installation &amp; Replacement</a></div>
+    <div><h4>Hours</h4><p>Mon-Sat: 8am - 6pm</p><p>Sun: Closed</p></div>
+  </div>
+  <div class="fbot">&copy; 2026 DadeAppliance. All rights reserved.</div>
+</div></footer>
+
+<style>
+#mschat{position:fixed;right:22px;bottom:22px;z-index:90;font-family:var(--font)}
+#mschat .ms-bubble{background:var(--accent);color:var(--accent-ink);font-weight:800;border:none;cursor:pointer;padding:14px 22px 14px 18px;border-radius:40px;box-shadow:0 10px 26px rgba(0,0,0,.28);display:flex;gap:9px;align-items:center;font-size:15px}
+#mschat .ms-bubble:hover{background:var(--accent-dark)}
+#mschat .ms-panel{position:absolute;right:0;bottom:66px;width:332px;max-width:86vw;background:#fff;border-radius:18px;box-shadow:0 22px 54px rgba(0,0,0,.30);overflow:hidden;display:none;flex-direction:column}
+#mschat.open .ms-panel{display:flex}
+#mschat .ms-head{background:var(--accent);color:var(--accent-ink);padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+#mschat .ms-head b{font-size:16px;display:block} #mschat .ms-head span{font-size:12px;opacity:.9}
+#mschat .ms-x{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;line-height:1}
+#mschat .ms-body{padding:16px;background:#f6f8fb}
+#mschat .ms-msg{background:#fff;border-radius:14px;padding:12px 14px;font-size:14px;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);margin-bottom:12px}
+#mschat input,#mschat textarea{width:100%;padding:11px 13px;border:1px solid #e2e6ec;border-radius:10px;margin-bottom:9px;font-size:14px;font-family:inherit}
+#mschat textarea{min-height:62px;resize:vertical}
+#mschat .ms-send{width:100%;background:var(--accent);color:var(--accent-ink);border:none;border-radius:10px;padding:12px;font-weight:800;cursor:pointer;font-size:14px}
+#mschat .ms-send:hover{background:var(--accent-dark)}
+#mschat .ms-done{text-align:center;padding:18px 6px;color:var(--primary-dark);font-weight:700;font-size:15px}
+</style>
+<div id="mschat">
+  <div class="ms-panel">
+    <div class="ms-head"><div><b>DadeAppliance</b><span>Typically replies in a few minutes</span></div>
+      <button class="ms-x" onclick="msChat(0)" aria-label="Close">&times;</button></div>
+    <div class="ms-body">
+      <div class="ms-msg">Hi! &#128075; Thanks for visiting DadeAppliance. Tell us what you need and we will text you right back.</div>
+      <div id="msForm">
+        <input id="msName" placeholder="Your name">
+        <input id="msPhone" placeholder="Phone number">
+        <textarea id="msMsg" placeholder="How can we help?"></textarea>
+        <button class="ms-send" onclick="msSend()">Send</button>
+      </div>
+      <div class="ms-done" id="msDone" style="display:none"></div>
+    </div>
+  </div>
+  <button class="ms-bubble" onclick="msChat()">&#128172; Chat with us</button>
+</div>
+<script>
+function msChat(f){var c=document.getElementById('mschat');if(f===undefined){c.classList.toggle('open');}else{c.classList.toggle('open',!!f);}}
+function msSend(){var v=document.getElementById('msName').value||'there';var n=v.split(' ')[0];document.getElementById('msForm').style.display='none';var d=document.getElementById('msDone');d.style.display='block';d.innerHTML='Thanks '+n+'! &#127881;<br>We got your message and will text you shortly.';}
+</script>
+
+<script>
+document.querySelectorAll('.qa button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var a=this.nextElementSibling, open=a.style.maxHeight && a.style.maxHeight!=='0px';
+    document.querySelectorAll('.qa .ans').forEach(function(x){x.style.maxHeight='0px'});
+    document.querySelectorAll('.qa .ic').forEach(function(x){x.textContent='+'});
+    if(!open){a.style.maxHeight=a.scrollHeight+'px';this.querySelector('.ic').textContent='-';}
+  });
+});
+</script>
+</body></html>
