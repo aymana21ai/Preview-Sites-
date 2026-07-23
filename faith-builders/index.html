@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Faith Builders Home Remodeling &amp; Handyman Services | Riverview, FL</title>
+<meta name="description" content="Faith Builders — veteran &amp; family-owned home remodeling, carpentry, and handyman services in Riverview and the greater Tampa Bay area. Kitchens, baths, decks, repairs, and more. 5.0 stars, 14 reviews. Free estimates.">
+<style>
+:root{
+  --primary:#21446E; --primary-dark:#163050;
+  --accent:#E0A526; --accent-dark:#C48A16; --accent-ink:#17110A; --accent-text:#9A7415; --logo-h:62px; --quote-logo-h:130px;
+  --ink:#1f2733; --muted:#5b6675; --line:#e7eaef; --bg-soft:#f5f7fa; --white:#fff;
+  --radius:16px; --shadow:0 18px 40px rgba(20,30,50,.10);
+  --font:'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);line-height:1.65;background:var(--white)}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+h1,h2,h3{line-height:1.15;color:var(--primary-dark)}
+h2{font-size:34px;margin-bottom:10px}
+.eyebrow{color:var(--accent-text);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:10px}
+.center{text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;line-height:1;background:var(--accent);color:var(--accent-ink);font-weight:800;padding:15px 30px;border-radius:12px;
+  border:none;cursor:pointer;font-size:15px;letter-spacing:.3px;transition:.18s;box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.btn:hover{background:var(--accent-dark);transform:translateY(-2px)}
+.btn-sm{padding:10px 20px;font-size:14px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.10)}
+.btn-light{background:#fff;color:var(--primary-dark)}
+
+header{position:sticky;top:0;z-index:60;background:#fff;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:21px;color:var(--primary-dark)}
+.brand img{height:var(--logo-h);width:auto;max-height:110px}
+.navlinks{display:flex;gap:26px;font-weight:600}
+.navlinks a:hover{color:var(--accent)}
+.navside{display:flex;align-items:center;gap:18px}
+.phone{font-weight:800;color:var(--primary-dark);white-space:nowrap}
+@media(max-width:920px){.navlinks,.phone{display:none}}
+
+.hero{position:relative;color:#fff;background:linear-gradient(rgba(18,26,40,.62),rgba(18,26,40,.72)),url('https://images.pexels.com/photos/7667625/pexels-photo-7667625.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding:96px 0}
+.hero h1{color:#fff;font-size:48px;margin-bottom:8px}
+.hero .lede{font-size:25px;font-weight:600;opacity:.96;margin-bottom:14px}
+.hero p.sub{font-size:17px;opacity:.92;max-width:520px;margin-bottom:26px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.badges span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:30px;font-size:13px;font-weight:600}
+.quote{background:#fff;color:var(--ink);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.quote-logo{height:var(--quote-logo-h);max-height:190px;width:auto;margin:0 auto 16px;display:block}
+.quote h3{text-align:center;font-size:23px;margin-bottom:3px}
+.quote .qs{text-align:center;color:var(--muted);font-size:14px;margin-bottom:18px}
+.field{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;margin-bottom:12px;font-size:15px;font-family:inherit}
+textarea.field{min-height:84px;resize:vertical}
+.consent{font-size:11px;color:var(--muted);margin:4px 0 14px}
+.quote .btn{width:100%}
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr;padding:56px 0}.hero h1{font-size:34px}.hero .lede{font-size:20px}}
+
+.trust{background:var(--primary-dark);color:#fff}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:space-around;gap:16px;padding:22px}
+.trust b{font-size:15px;letter-spacing:.5px;text-transform:uppercase;display:flex;gap:9px;align-items:center}
+.trust b::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--accent)}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-grid img{border-radius:var(--radius);height:420px;width:100%;object-fit:cover;box-shadow:var(--shadow)}
+.about p{color:var(--muted);font-size:17px;margin-top:8px}
+@media(max-width:920px){.about-grid{grid-template-columns:1fr}.about-grid img{height:280px}}
+
+.services{background:var(--bg-soft)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.2s}
+.card:hover{transform:translateY(-6px)}
+.card img{height:190px;width:100%;object-fit:cover}
+.card .cb{padding:22px}
+.card h3{font-size:20px;margin-bottom:8px;color:var(--primary-dark)}
+.card p{color:var(--muted);font-size:14.5px}
+@media(max-width:920px){.cards{grid-template-columns:1fr}}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:42px}
+.step{text-align:center}
+.step .n{width:66px;height:66px;border-radius:50%;background:var(--primary);color:#fff;font-size:26px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.step h3{margin-bottom:6px} .step p{color:var(--muted);font-size:15px}
+@media(max-width:920px){.steps{grid-template-columns:1fr}}
+
+.gallery{background:var(--bg-soft)}
+.grid-imgs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+.grid-imgs img{height:180px;width:100%;object-fit:cover;border-radius:12px}
+@media(max-width:920px){.grid-imgs{grid-template-columns:repeat(2,1fr)}}
+
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.review{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.stars{color:#f5b50a;font-size:18px;margin-bottom:10px}
+.review p{color:#39424f;font-size:15px} .review .who{margin-top:14px;font-weight:800;color:var(--primary-dark)}
+@media(max-width:920px){.rev{grid-template-columns:1fr}}
+
+.faq{max-width:840px;margin:36px auto 0}
+.qa{border-bottom:1px solid var(--line)}
+.qa button{width:100%;text-align:left;background:none;border:none;padding:20px 0;font-size:17px;font-weight:700;
+  color:var(--primary-dark);cursor:pointer;display:flex;justify-content:space-between;gap:16px;font-family:inherit}
+.qa .ic{color:var(--accent-text);font-size:24px;line-height:1}
+.qa .ans{max-height:0;overflow:hidden;transition:max-height .28s ease}
+.qa .ans p{padding-bottom:18px;color:var(--muted);font-size:15.5px}
+
+.areas{background:var(--primary-dark);color:#fff}
+.areas h2{color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.chips span{background:rgba(255,255,255,.12);padding:10px 20px;border-radius:30px;font-weight:600}
+
+.final{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;text-align:center}
+.final h2{color:#fff;font-size:38px} .final p{font-size:19px;opacity:.95;margin:10px 0 26px}
+
+footer{background:#161d28;color:#aab4c2;padding:56px 0 26px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;text-transform:uppercase;letter-spacing:1px;font-size:15px;margin-bottom:14px}
+footer a{display:block;margin-bottom:7px} footer a:hover{color:#fff}
+.fbrand{font-weight:800;font-size:21px;color:#fff;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.fbrand img{height:38px}
+.fbot{border-top:1px solid #2a3340;margin-top:34px;padding-top:18px;text-align:center;color:#7f8a99;font-size:13px}
+@media(max-width:920px){.fgrid{grid-template-columns:1fr 1fr}}
+</style></head>
+<body>
+
+<header><div class="wrap"><nav>
+  <a href="#home" class="brand"><img src="logo.svg" alt="Faith Builders"></a>
+  <div class="navlinks">
+    <a href="#services">Services</a><a href="#about">About</a>
+    <a href="#gallery">Gallery</a><a href="#areas">Areas</a><a href="#contact">Contact</a>
+  </div>
+  <div class="navside"><span class="phone">(813) 893-1087</span><a href="#contact" class="btn btn-sm">Free Quote</a></div>
+</nav></div></header>
+
+<section class="hero" id="home"><div class="wrap"><div class="hero-grid">
+  <div>
+    <h1>Home Remodeling &amp; Handyman Services in Riverview, FL</h1>
+    <div class="lede">Your Vision Is Our Inspiration</div>
+    <p class="sub">Veteran and family-owned remodeling, carpentry, and handyman services across Riverview and the greater Tampa Bay area. From kitchen and bath remodels to decks, repairs, and everything in between — honest work, done right the first time. Free estimates.</p>
+    <a href="#contact" class="btn">Get a Free Quote</a>
+    <div class="badges"><span>5.0 ★ on Google</span><span>Veteran &amp; Family Owned</span><span>Free Estimates</span><span>Honest Work</span></div>
+  </div>
+  <div class="quote" id="contact">
+    <img class="quote-logo" src="logo.svg" alt="Faith Builders"><h3>Get a Free Quote</h3><div class="qs">We'll get back to you the same day.</div>
+    <input class="field" placeholder="Full Name *">
+    <input class="field" placeholder="Phone *">
+    <textarea class="field" placeholder="Tell us about your project *"></textarea>
+    <div class="consent">By providing your phone number you agree to receive text messages from Faith Builders.</div>
+    <button class="btn">Send</button>
+  </div>
+</div></div></section>
+
+<div class="trust"><div class="wrap"><b>5.0★ (14 Google reviews)</b><b>Veteran &amp; Family Owned</b><b>Free Estimates</b><b>Quality Craftsmanship</b></div></div>
+
+<section class="about" id="about"><div class="wrap about-grid">
+  <img src="https://images.pexels.com/photos/6232443/pexels-photo-6232443.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Faith Builders">
+  <div><div class="eyebrow">About Us</div><h2>Faith, Family &amp; Fine Craftsmanship</h2><p>Faith Builders Home Remodeling &amp; Handyman Services is a veteran and family-owned company serving Riverview and the greater Tampa Bay area. Led by Steve, we&#x27;re dedicated to honest work and treating your home like our own — because your vision is our inspiration. From full kitchen and bathroom remodels to carpentry, decks, and the handyman to-do list you never get to, we bring creativity, professionalism, and real pride in our craftsmanship to every project. Reliable, detail-oriented, and fairly priced — with a free estimate to start.</p>
+    <p style="margin-top:14px"><a href="#contact" class="btn">Get a Free Quote</a></p></div>
+</div></section>
+
+<section class="services" id="services"><div class="wrap center">
+  <div class="eyebrow">Our Services</div><h2>What We Build &amp; Fix</h2>
+  <div class="cards" style="text-align:left"><div class="card"><img src="https://images.pexels.com/photos/15668081/pexels-photo-15668081.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Kitchen Remodeling"><div class="cb"><h3>Kitchen Remodeling</h3><p>Custom kitchen remodels — cabinets, counters, backsplash, and layout — designed and built around how you actually live.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/1909791/pexels-photo-1909791.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Bathroom Remodeling"><div class="cb"><h3>Bathroom Remodeling</h3><p>Beautiful, functional bathroom makeovers, from a fresh vanity and tile to a full down-to-the-studs remodel.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/7218567/pexels-photo-7218567.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Handyman &amp; Home Repairs"><div class="cb"><h3>Handyman &amp; Home Repairs</h3><p>Your whole to-do list handled by a pro — fixtures, doors, drywall, mounting, and all the little fixes that add up.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/5768217/pexels-photo-5768217.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Carpentry, Trim &amp; Doors"><div class="cb"><h3>Carpentry, Trim &amp; Doors</h3><p>Custom carpentry, trim, crown molding, built-ins, and doors — clean lines and craftsmanship that lasts.</p></div></div><div class="card"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkxAVrogSALaYU7bAeFCHOJ2l0dhNy-z1Ak0rK3BAAIcyYM9iU1H8PZCV503T-tRoKXs4aEEvfwi3YMVG-YBQmCd5xgbPvyVCehQG_sq8Jg4ghYk5Yi4ARfYOdfuUUUBGtI7I4il5tF67HN=w1000-h750" alt="Decks &amp; Outdoor Living"><div class="cb"><h3>Decks &amp; Outdoor Living</h3><p>Decks, pergolas, tiki bars, and outdoor spaces built for Florida living and made to enjoy year-round.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/994164/pexels-photo-994164.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Painting, Drywall &amp; Flooring"><div class="cb"><h3>Painting, Drywall &amp; Flooring</h3><p>Interior painting, drywall repair, and flooring to refresh any room and finish your project top to bottom.</p></div></div></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">The Process</div><h2>Simple 3-Step Process</h2>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>Contact Us</h3><p>Fill out the free quote form and tell us about your project.</p></div>
+    <div class="step"><div class="n">2</div><h3>Free Estimate</h3><p>We visit at a time that works for you and provide a clear, honest estimate.</p></div>
+    <div class="step"><div class="n">3</div><h3>Get It Done</h3><p>Approve the estimate and we schedule the work and deliver results you'll love.</p></div>
+  </div>
+</div></section>
+
+<section class="gallery" id="gallery"><div class="wrap center">
+  <div class="eyebrow">Our Work</div><h2>Recent Projects</h2>
+  <div class="grid-imgs"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkxAVrogSALaYU7bAeFCHOJ2l0dhNy-z1Ak0rK3BAAIcyYM9iU1H8PZCV503T-tRoKXs4aEEvfwi3YMVG-YBQmCd5xgbPvyVCehQG_sq8Jg4ghYk5Yi4ARfYOdfuUUUBGtI7I4il5tF67HN=w1000-h750" alt="Faith Builders project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlhm5sNw5X_Ktu6uVlmZKXHdg8m_eRuRV6n06pfiKCWPHnXUVCA8805fsQbltsRvM_dD4iMrBY4cl-urxn5EuYeia8Exj6N-fPzNd2TXE1y-EXljM2Yz_Q3onvivYe6VEy8j8xhMy9Mnpgu=w1000-h750" alt="Faith Builders project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmEYFis33Jr9vyCgDpEBvbmDHz7c4WSfhRbbo1fWStbysTvWOT8ZYlKL9aSqJYjH4l_mB3JHhb8Yibx80rGWU5i-6uoA89v4_APwb1PN8Q_y0U3JsDFxY-ceAXPi4-N7svGnmp11XD9-o9y=w1000-h750" alt="Faith Builders project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWklPSq_U3dRNx1u-Punm62wxz2Bq_fnpTQOVZwOAsfer0jwXwSqFDVY6yVhhLjyoDLgRwozSmzltkscsbVBTRf4hYVnq0DNbGq3R9it6TLIrTWPxVuaBc7cTjXJkBhX8KDNAu9HMyx-yemn=w1000-h750" alt="Faith Builders project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmxdhj2efC7LQkuIgUyu0jzsIEma3rUoRFrVzIG99LeT4Px6C7HqcU2UEWbnN1JZg45Okw6a5CizadnlotboPG768YZ6Q8k7kZbbtWRAHX5xMO8B-Zku64HBfptTJowzfPP35JwoH5HxEwX=w1000-h750" alt="Faith Builders project"><img src="https://images.pexels.com/photos/36035073/pexels-photo-36035073.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Faith Builders project"><img src="https://images.pexels.com/photos/8829893/pexels-photo-8829893.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Faith Builders project"><img src="https://images.pexels.com/photos/10827349/pexels-photo-10827349.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Faith Builders project"></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">Reviews</div><h2>What Customers Say</h2>
+  <div class="rev" style="text-align:left"><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>I had several projects around the house handled quickly and correctly — light fixtures, kitchen backsplash, and a screen door. The work was completed on time and done right the first time. Working with Faith Builders was a pleasure — highly recommend!</p><div class="who">&mdash; Janet S.</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Highly recommend Faith Builders. Quality work, fair pricing, and great professionalism. The finished product turned out better than I imagined.</p><div class="who">&mdash; Parth P.</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Faith Builders honors God in how they do business. They&#x27;re honest, professional, very creative, and detail-oriented, with real pride in their craftsmanship. Highly recommend!</p><div class="who">&mdash; H. Dillon</div></div></div>
+</div></section>
+
+<section class="services"><div class="wrap">
+  <h2 class="center">Frequently Asked Questions</h2>
+  <div class="faq"><div class="qa"><button>What areas do you serve?<span class="ic">+</span></button><div class="ans"><p>We&#x27;re based in Riverview and serve the greater Tampa Bay area, including Brandon, Valrico, Apollo Beach, Gibsonton, and Tampa.</p></div></div><div class="qa"><button>What kinds of projects do you take on?<span class="ic">+</span></button><div class="ans"><p>Everything from full kitchen and bath remodels to carpentry, decks, painting, and flooring — plus the handyman repairs on your list. If it&#x27;s in or around your home, we can help.</p></div></div><div class="qa"><button>Do you offer free estimates?<span class="ic">+</span></button><div class="ans"><p>Yes — every project starts with a free, no-obligation estimate.</p></div></div><div class="qa"><button>What makes Faith Builders different?<span class="ic">+</span></button><div class="ans"><p>We&#x27;re a veteran and family-owned business built on honest work and craftsmanship. Your vision is our inspiration, and we treat every home like our own.</p></div></div></div>
+</div></section>
+
+<section class="areas" id="areas"><div class="wrap center">
+  <div class="eyebrow" style="color:var(--accent-text)">Service Area</div>
+  <h2>Proudly Serving Riverview &amp; Nearby</h2>
+  <div class="chips"><span>Riverview</span><span>Brandon</span><span>Valrico</span><span>Apollo Beach</span><span>Gibsonton</span><span>Ruskin</span><span>Tampa</span><span>Lithia</span><span>Bloomingdale</span><span>Sun City Center</span></div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Ready to Get Started?</h2><p>Get your free home remodeling &amp; handyman quote today.</p>
+  <a href="#contact" class="btn btn-light">Get a Free Quote</a>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><div class="fbrand"><img src="logo.svg" alt="Faith Builders"></div>
+      <p>Quality home remodeling &amp; handyman services across Riverview and the surrounding area.</p>
+      <p style="margin-top:12px;color:#fff;font-weight:700">(813) 893-1087</p></div>
+    <div><h4>Company</h4><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+    <div><h4>Services</h4><a href="#services">Kitchen Remodeling</a><a href="#services">Bathroom Remodeling</a><a href="#services">Handyman &amp; Home Repairs</a><a href="#services">Carpentry, Trim &amp; Doors</a><a href="#services">Decks &amp; Outdoor Living</a></div>
+    <div><h4>Hours</h4><p>Mon-Sat: 8am - 6pm</p><p>Sun: Closed</p></div>
+  </div>
+  <div class="fbot">&copy; 2026 Faith Builders. All rights reserved.</div>
+</div></footer>
+
+<style>
+#mschat{position:fixed;right:22px;bottom:22px;z-index:90;font-family:var(--font)}
+#mschat .ms-bubble{background:var(--accent);color:var(--accent-ink);font-weight:800;border:none;cursor:pointer;padding:14px 22px 14px 18px;border-radius:40px;box-shadow:0 10px 26px rgba(0,0,0,.28);display:flex;gap:9px;align-items:center;font-size:15px}
+#mschat .ms-bubble:hover{background:var(--accent-dark)}
+#mschat .ms-panel{position:absolute;right:0;bottom:66px;width:332px;max-width:86vw;background:#fff;border-radius:18px;box-shadow:0 22px 54px rgba(0,0,0,.30);overflow:hidden;display:none;flex-direction:column}
+#mschat.open .ms-panel{display:flex}
+#mschat .ms-head{background:var(--accent);color:var(--accent-ink);padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+#mschat .ms-head b{font-size:16px;display:block} #mschat .ms-head span{font-size:12px;opacity:.9}
+#mschat .ms-x{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;line-height:1}
+#mschat .ms-body{padding:16px;background:#f6f8fb}
+#mschat .ms-msg{background:#fff;border-radius:14px;padding:12px 14px;font-size:14px;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);margin-bottom:12px}
+#mschat input,#mschat textarea{width:100%;padding:11px 13px;border:1px solid #e2e6ec;border-radius:10px;margin-bottom:9px;font-size:14px;font-family:inherit}
+#mschat textarea{min-height:62px;resize:vertical}
+#mschat .ms-send{width:100%;background:var(--accent);color:var(--accent-ink);border:none;border-radius:10px;padding:12px;font-weight:800;cursor:pointer;font-size:14px}
+#mschat .ms-send:hover{background:var(--accent-dark)}
+#mschat .ms-done{text-align:center;padding:18px 6px;color:var(--primary-dark);font-weight:700;font-size:15px}
+</style>
+<div id="mschat">
+  <div class="ms-panel">
+    <div class="ms-head"><div><b>Faith Builders</b><span>Typically replies in a few minutes</span></div>
+      <button class="ms-x" onclick="msChat(0)" aria-label="Close">&times;</button></div>
+    <div class="ms-body">
+      <div class="ms-msg">Hi! &#128075; Thanks for visiting Faith Builders. Tell us what you need and we will text you right back.</div>
+      <div id="msForm">
+        <input id="msName" placeholder="Your name">
+        <input id="msPhone" placeholder="Phone number">
+        <textarea id="msMsg" placeholder="How can we help?"></textarea>
+        <button class="ms-send" onclick="msSend()">Send</button>
+      </div>
+      <div class="ms-done" id="msDone" style="display:none"></div>
+    </div>
+  </div>
+  <button class="ms-bubble" onclick="msChat()">&#128172; Chat with us</button>
+</div>
+<script>
+function msChat(f){var c=document.getElementById('mschat');if(f===undefined){c.classList.toggle('open');}else{c.classList.toggle('open',!!f);}}
+function msSend(){var v=document.getElementById('msName').value||'there';var n=v.split(' ')[0];document.getElementById('msForm').style.display='none';var d=document.getElementById('msDone');d.style.display='block';d.innerHTML='Thanks '+n+'! &#127881;<br>We got your message and will text you shortly.';}
+</script>
+
+<script>
+document.querySelectorAll('.qa button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var a=this.nextElementSibling, open=a.style.maxHeight && a.style.maxHeight!=='0px';
+    document.querySelectorAll('.qa .ans').forEach(function(x){x.style.maxHeight='0px'});
+    document.querySelectorAll('.qa .ic').forEach(function(x){x.textContent='+'});
+    if(!open){a.style.maxHeight=a.scrollHeight+'px';this.querySelector('.ic').textContent='-';}
+  });
+});
+</script>
+</body></html>
