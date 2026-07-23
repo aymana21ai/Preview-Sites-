@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 338 64" width="338" height="64" role="img" aria-label="HVS Tile Services">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A3B44"/>
+      <stop offset="1" stop-color="#1C2A31"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="4" width="56" height="56" rx="14" fill="url(#g)"/>
+  <rect x="2" y="4" width="56" height="56" rx="14" fill="none" stroke="#159E9E" stroke-width="2.5"/>
+  <text x="30.0" y="39" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="21" fill="#159E9E">HVS</text>
+  <text x="72" y="41" font-family="'Segoe UI', system-ui, Arial, sans-serif" font-weight="800" font-size="27" fill="#1C2A31">HVS Tile Services</text>
+</svg>
