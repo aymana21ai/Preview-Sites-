@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 64" width="384" height="64" role="img" aria-label="Ray&#x27;s Boat Detailing">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#12354F"/>
-      <stop offset="1" stop-color="#0C2438"/>
-    </linearGradient>
-  </defs>
-  <rect x="2" y="4" width="56" height="56" rx="14" fill="url(#g)"/>
-  <rect x="2" y="4" width="56" height="56" rx="14" fill="none" stroke="#14A5C4" stroke-width="2.5"/>
-  <text x="30.0" y="39" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="21" fill="#14A5C4">RBD</text>
-  <text x="72" y="41" font-family="'Segoe UI', system-ui, Arial, sans-serif" font-weight="800" font-size="27" fill="#0C2438">Ray&#x27;s Boat Detailing</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="202" height="60" viewBox="0 0 202 60" role="img" aria-label="Ray&#x27;s Boat Detailing"><rect x="2" y="8" width="44" height="44" rx="10" fill="#12354F"/><path d="M9 31 h30 l-5 10 h-20 Z" fill="#14A5C4"/><path d="M24 12 L24 29 L34 29 Z" fill="#14A5C4"/><path d="M8 44 q8 -4 16 0 t16 0" stroke="#14A5C4" stroke-width="2.5" fill="none" stroke-linecap="round"/><text x="56" y="30" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" fill="#0C2438">Ray&#x27;s Boat</text><text x="56" y="48" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#14A5C4">DETAILING</text></svg>
