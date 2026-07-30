@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mel&#x27;s Electrical, Inc. | Electrician in Clearwater, FL</title>
+<meta name="description" content="Mel&#x27;s Electrical, Inc. — licensed, bonded, and insured electrician serving Clearwater and Pinellas County. Panel upgrades, rewiring, outlets and switches, lighting and ceiling fans, troubleshooting, and repairs. Family owned. Residential and commercial.">
+<style>
+:root{
+  --primary:#1B2A3D; --primary-dark:#111C29;
+  --accent:#F2B01E; --accent-dark:#D0940F; --accent-ink:#17110A; --accent-text:#A97A0C; --logo-h:62px; --quote-logo-h:150px;
+  --ink:#1f2733; --muted:#5b6675; --line:#e7eaef; --bg-soft:#f5f7fa; --white:#fff;
+  --radius:16px; --shadow:0 18px 40px rgba(20,30,50,.10);
+  --font:'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);line-height:1.65;background:var(--white)}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+h1,h2,h3{line-height:1.15;color:var(--primary-dark)}
+h2{font-size:34px;margin-bottom:10px}
+.eyebrow{color:var(--accent-text);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:10px}
+.center{text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;line-height:1;background:var(--accent);color:var(--accent-ink);font-weight:800;padding:15px 30px;border-radius:12px;
+  border:none;cursor:pointer;font-size:15px;letter-spacing:.3px;transition:.18s;box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.btn:hover{background:var(--accent-dark);transform:translateY(-2px)}
+.btn-sm{padding:10px 20px;font-size:14px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.10)}
+.btn-light{background:#fff;color:var(--primary-dark)}
+
+header{position:sticky;top:0;z-index:60;background:#fff;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:21px;color:var(--primary-dark)}
+.brand img{height:var(--logo-h);width:auto;max-height:110px}
+.navlinks{display:flex;gap:26px;font-weight:600}
+.navlinks a:hover{color:var(--accent)}
+.navside{display:flex;align-items:center;gap:18px}
+.phone{font-weight:800;color:var(--primary-dark);white-space:nowrap}
+@media(max-width:920px){.navlinks,.phone{display:none}}
+
+.hero{position:relative;color:#fff;background:linear-gradient(rgba(18,26,40,.62),rgba(18,26,40,.72)),url('https://images.pexels.com/photos/32497160/pexels-photo-32497160.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding:96px 0}
+.hero h1{color:#fff;font-size:48px;margin-bottom:8px}
+.hero .lede{font-size:25px;font-weight:600;opacity:.96;margin-bottom:14px}
+.hero p.sub{font-size:17px;opacity:.92;max-width:520px;margin-bottom:26px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.badges span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:30px;font-size:13px;font-weight:600}
+.quote{background:#fff;color:var(--ink);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.quote-logo{height:var(--quote-logo-h);max-height:190px;width:auto;margin:0 auto 16px;display:block}
+.quote h3{text-align:center;font-size:23px;margin-bottom:3px}
+.quote .qs{text-align:center;color:var(--muted);font-size:14px;margin-bottom:18px}
+.field{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;margin-bottom:12px;font-size:15px;font-family:inherit}
+textarea.field{min-height:84px;resize:vertical}
+.consent{font-size:11px;color:var(--muted);margin:4px 0 14px}
+.quote .btn{width:100%}
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr;padding:56px 0}.hero h1{font-size:34px}.hero .lede{font-size:20px}}
+
+.trust{background:var(--primary-dark);color:#fff}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:space-around;gap:16px;padding:22px}
+.trust b{font-size:15px;letter-spacing:.5px;text-transform:uppercase;display:flex;gap:9px;align-items:center}
+.trust b::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--accent)}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-grid img{border-radius:var(--radius);height:420px;width:100%;object-fit:cover;box-shadow:var(--shadow)}
+.about p{color:var(--muted);font-size:17px;margin-top:8px}
+@media(max-width:920px){.about-grid{grid-template-columns:1fr}.about-grid img{height:280px}}
+
+.services{background:var(--bg-soft)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.2s}
+.card:hover{transform:translateY(-6px)}
+.card img{height:190px;width:100%;object-fit:cover}
+.card .cb{padding:22px}
+.card h3{font-size:20px;margin-bottom:8px;color:var(--primary-dark)}
+.card p{color:var(--muted);font-size:14.5px}
+@media(max-width:920px){.cards{grid-template-columns:1fr}}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:42px}
+.step{text-align:center}
+.step .n{width:66px;height:66px;border-radius:50%;background:var(--primary);color:#fff;font-size:26px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.step h3{margin-bottom:6px} .step p{color:var(--muted);font-size:15px}
+@media(max-width:920px){.steps{grid-template-columns:1fr}}
+
+.gallery{background:var(--bg-soft)}
+.grid-imgs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+.grid-imgs img{height:180px;width:100%;object-fit:cover;border-radius:12px}
+@media(max-width:920px){.grid-imgs{grid-template-columns:repeat(2,1fr)}}
+
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.review{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.stars{color:#f5b50a;font-size:18px;margin-bottom:10px}
+.review p{color:#39424f;font-size:15px} .review .who{margin-top:14px;font-weight:800;color:var(--primary-dark)}
+@media(max-width:920px){.rev{grid-template-columns:1fr}}
+
+.faq{max-width:840px;margin:36px auto 0}
+.qa{border-bottom:1px solid var(--line)}
+.qa button{width:100%;text-align:left;background:none;border:none;padding:20px 0;font-size:17px;font-weight:700;
+  color:var(--primary-dark);cursor:pointer;display:flex;justify-content:space-between;gap:16px;font-family:inherit}
+.qa .ic{color:var(--accent-text);font-size:24px;line-height:1}
+.qa .ans{max-height:0;overflow:hidden;transition:max-height .28s ease}
+.qa .ans p{padding-bottom:18px;color:var(--muted);font-size:15.5px}
+
+.areas{background:var(--primary-dark);color:#fff}
+.areas h2{color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.chips span{background:rgba(255,255,255,.12);padding:10px 20px;border-radius:30px;font-weight:600}
+
+.final{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;text-align:center}
+.final h2{color:#fff;font-size:38px} .final p{font-size:19px;opacity:.95;margin:10px 0 26px}
+
+footer{background:#161d28;color:#aab4c2;padding:56px 0 26px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;text-transform:uppercase;letter-spacing:1px;font-size:15px;margin-bottom:14px}
+footer a{display:block;margin-bottom:7px} footer a:hover{color:#fff}
+.fbrand{font-weight:800;font-size:21px;color:#fff;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.fbrand img{height:38px}
+.fbot{border-top:1px solid #2a3340;margin-top:34px;padding-top:18px;text-align:center;color:#7f8a99;font-size:13px}
+@media(max-width:920px){.fgrid{grid-template-columns:1fr 1fr}}
+</style></head>
+<body>
+
+<header><div class="wrap"><nav>
+  <a href="#home" class="brand"><img src="logo.svg" alt="Mel&#x27;s Electrical"></a>
+  <div class="navlinks">
+    <a href="#services">Services</a><a href="#about">About</a>
+    <a href="#gallery">Gallery</a><a href="#areas">Areas</a><a href="#contact">Contact</a>
+  </div>
+  <div class="navside"><span class="phone">(727) 234-3779</span><a href="#contact" class="btn btn-sm">Free Quote</a></div>
+</nav></div></header>
+
+<section class="hero" id="home"><div class="wrap"><div class="hero-grid">
+  <div>
+    <h1>Licensed Electrician in Clearwater, FL</h1>
+    <div class="lede">Family Owned — Licensed, Bonded &amp; Insured</div>
+    <p class="sub">Honest, experienced electrical work across Clearwater and Pinellas County. Panel upgrades, rewiring, outlets and switches, lighting and ceiling fans, troubleshooting, and repairs — done right by an owner who actually shows up. Residential and commercial. Free estimates.</p>
+    <a href="#contact" class="btn">Get a Free Quote</a>
+    <div class="badges"><span>Licensed, Bonded &amp; Insured</span><span>Family Owned</span><span>Free Estimates</span><span>Residential &amp; Commercial</span></div>
+  </div>
+  <div class="quote" id="contact">
+    <img class="quote-logo" src="logo.svg" alt="Mel&#x27;s Electrical"><h3>Get a Free Quote</h3><div class="qs">We'll get back to you the same day.</div>
+    <input class="field" placeholder="Full Name *">
+    <input class="field" placeholder="Phone *">
+    <textarea class="field" placeholder="Tell us about your project *"></textarea>
+    <div class="consent">By providing your phone number you agree to receive text messages from Mel&#x27;s Electrical.</div>
+    <button class="btn">Send</button>
+  </div>
+</div></div></section>
+
+<div class="trust"><div class="wrap"><b>Licensed, Bonded &amp; Insured</b><b>Family Owned &amp; Operated</b><b>Residential &amp; Commercial</b><b>Fair, Upfront Pricing</b></div></div>
+
+<section class="about" id="about"><div class="wrap about-grid">
+  <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlMtLbOof_eLWW9qWCz-4ywkBPcnvrOaO2v7uEfguVaBD4eTCU7Us6C65-CWQM26zvczhFldABKhkRm_eGebKSuLLK0Ngv_jbwOOUGB7wN53yy6QGyjxs1gMPgbfQ7p5uLlVwgwxFBWx4-G=w1000-h750" alt="Mel&#x27;s Electrical">
+  <div><div class="eyebrow">About Us</div><h2>Clearwater&#x27;s Family-Owned Electricians</h2><p>Mel&#x27;s Electrical, Inc. is a family owned and operated electrical contractor serving Clearwater and the greater Pinellas County area. We&#x27;re fully licensed, bonded, and insured, and we work with both residential and commercial clients — from panel upgrades, rewires, and new outlets to ceiling fans, recessed lighting, troubleshooting, and repairs. Mel handles the work himself, which is why customers keep saying the same things: he shows up when others don&#x27;t, the pricing is fair, and the work is done right the first time. Every job starts with a free estimate.</p>
+    <p style="margin-top:14px"><a href="#contact" class="btn">Get a Free Quote</a></p></div>
+</div></section>
+
+<section class="services" id="services"><div class="wrap center">
+  <div class="eyebrow">Our Services</div><h2>Our Electrical Services</h2>
+  <div class="cards" style="text-align:left"><div class="card"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlMtLbOof_eLWW9qWCz-4ywkBPcnvrOaO2v7uEfguVaBD4eTCU7Us6C65-CWQM26zvczhFldABKhkRm_eGebKSuLLK0Ngv_jbwOOUGB7wN53yy6QGyjxs1gMPgbfQ7p5uLlVwgwxFBWx4-G=w1000-h750" alt="Panel Upgrades &amp; Breaker Repair"><div class="cb"><h3>Panel Upgrades &amp; Breaker Repair</h3><p>Outdated or overloaded panel? We upgrade service panels and repair breakers so your home&#x27;s power is safe, code-compliant, and up to modern demand.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/29871587/pexels-photo-29871587.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Whole-Home Rewiring"><div class="cb"><h3>Whole-Home Rewiring</h3><p>Older homes rewired end to end — safer wiring, added outlets, and modern capacity, handled cleanly from start to finish.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/5691588/pexels-photo-5691588.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Outlets, Switches &amp; GFCI"><div class="cb"><h3>Outlets, Switches &amp; GFCI</h3><p>New outlets, switch replacements, USB and GFCI installs — added exactly where you need them and wired to code.</p></div></div><div class="card"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkF5fB0PAFuChvN9FKw039tG6ZSxRPqJY4n8VamBl1P5Ow6pKAwoEr4ZyoTvet01LBnoP5OHoMntkePmYsG-ZO3N6_4hhosW9381HnH5PwnOHgg_r0qDyRFg25rbHUjifBDzY2K=w1000-h750" alt="Lighting &amp; Ceiling Fans"><div class="cb"><h3>Lighting &amp; Ceiling Fans</h3><p>Recessed lighting, fixtures, and ceiling fans installed, hung, and programmed — including the finishing touches that make a room work.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/9679179/pexels-photo-9679179.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Troubleshooting &amp; Repairs"><div class="cb"><h3>Troubleshooting &amp; Repairs</h3><p>Breakers tripping, outlets dead, lights flickering? We diagnose the real cause and fix it — no guessing, no unnecessary parts.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/20500461/pexels-photo-20500461.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Commercial Electrical"><div class="cb"><h3>Commercial Electrical</h3><p>Service, repairs, and installations for businesses and commercial properties, scheduled around your operation.</p></div></div></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">The Process</div><h2>Simple 3-Step Process</h2>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>Contact Us</h3><p>Fill out the free quote form and tell us about your project.</p></div>
+    <div class="step"><div class="n">2</div><h3>Free Estimate</h3><p>We visit at a time that works for you and provide a clear, honest estimate.</p></div>
+    <div class="step"><div class="n">3</div><h3>Get It Done</h3><p>Approve the estimate and we schedule the work and deliver results you'll love.</p></div>
+  </div>
+</div></section>
+
+<section class="gallery" id="gallery"><div class="wrap center">
+  <div class="eyebrow">Our Work</div><h2>Recent Projects</h2>
+  <div class="grid-imgs"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkF5fB0PAFuChvN9FKw039tG6ZSxRPqJY4n8VamBl1P5Ow6pKAwoEr4ZyoTvet01LBnoP5OHoMntkePmYsG-ZO3N6_4hhosW9381HnH5PwnOHgg_r0qDyRFg25rbHUjifBDzY2K=w1000-h750" alt="Mel&#x27;s Electrical project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlMtLbOof_eLWW9qWCz-4ywkBPcnvrOaO2v7uEfguVaBD4eTCU7Us6C65-CWQM26zvczhFldABKhkRm_eGebKSuLLK0Ngv_jbwOOUGB7wN53yy6QGyjxs1gMPgbfQ7p5uLlVwgwxFBWx4-G=w1000-h750" alt="Mel&#x27;s Electrical project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkMOF77N-X2rQ4KuATI8w5yvAbj23S6vuChWe3ihJRM1Wow59j9DxxnjE2n0JohAQBZbNbewUbXYFXCsiHlCCZee-28H0o7dkD2dnm5Yx47EAgUBPqCa6zkcHKX9eH9Pjpw_lPd=w1000-h750" alt="Mel&#x27;s Electrical project"><img src="https://images.pexels.com/photos/20500461/pexels-photo-20500461.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Mel&#x27;s Electrical project"><img src="https://images.pexels.com/photos/9679179/pexels-photo-9679179.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Mel&#x27;s Electrical project"><img src="https://images.pexels.com/photos/5691588/pexels-photo-5691588.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Mel&#x27;s Electrical project"><img src="https://images.pexels.com/photos/29871587/pexels-photo-29871587.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Mel&#x27;s Electrical project"><img src="https://images.pexels.com/photos/7647233/pexels-photo-7647233.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Mel&#x27;s Electrical project"></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">Reviews</div><h2>What Customers Say</h2>
+  <div class="rev" style="text-align:left"><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>The only company that showed up after two missed appointments from other companies. The quote was very reasonable and professional. I could tell this individual was knowledgeable and experienced — other places sent the most junior guy they had.</p><div class="who">&mdash; Julio R.</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>I bought an older house that needed to be rewired. He did it all and even added more outlets. Hung all my fans and programmed them. He even made sure to be around when appliances were delivered to make sure the electrical was right. Great prices, amazing work!</p><div class="who">&mdash; Bridget L.</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Mel is a great electrician with very fair pricing and quality work. He is also a really nice guy. I highly recommend him.</p><div class="who">&mdash; Melissa S.</div></div></div>
+</div></section>
+
+<section class="services"><div class="wrap">
+  <h2 class="center">Frequently Asked Questions</h2>
+  <div class="faq"><div class="qa"><button>What areas do you serve?<span class="ic">+</span></button><div class="ans"><p>We&#x27;re based in Clearwater and serve Pinellas County, including Largo, Dunedin, Safety Harbor, Palm Harbor, Seminole, and St. Petersburg — residential and commercial.</p></div></div><div class="qa"><button>Are you licensed and insured?<span class="ic">+</span></button><div class="ans"><p>Yes — Mel&#x27;s Electrical, Inc. is fully licensed, bonded, and insured, and family owned and operated.</p></div></div><div class="qa"><button>Do you offer free estimates?<span class="ic">+</span></button><div class="ans"><p>Yes — every job starts with a free, no-obligation estimate and clear, upfront pricing.</p></div></div><div class="qa"><button>What kind of electrical work do you do?<span class="ic">+</span></button><div class="ans"><p>Panel upgrades, whole-home rewiring, outlets, switches and GFCI, lighting and ceiling fans, troubleshooting and repairs, plus commercial electrical service.</p></div></div></div>
+</div></section>
+
+<section class="areas" id="areas"><div class="wrap center">
+  <div class="eyebrow" style="color:var(--accent-text)">Service Area</div>
+  <h2>Proudly Serving Clearwater &amp; Nearby</h2>
+  <div class="chips"><span>Clearwater</span><span>Largo</span><span>Dunedin</span><span>Safety Harbor</span><span>Palm Harbor</span><span>Seminole</span><span>Pinellas Park</span><span>St. Petersburg</span><span>Oldsmar</span><span>Belleair</span></div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Ready to Get Started?</h2><p>Get your free electrical quote today.</p>
+  <a href="#contact" class="btn btn-light">Get a Free Quote</a>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><div class="fbrand"><img src="logo.svg" alt="Mel&#x27;s Electrical"></div>
+      <p>Quality electrical services across Clearwater and the surrounding area.</p>
+      <p style="margin-top:12px;color:#fff;font-weight:700">(727) 234-3779</p></div>
+    <div><h4>Company</h4><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+    <div><h4>Services</h4><a href="#services">Panel Upgrades &amp; Breaker Repair</a><a href="#services">Whole-Home Rewiring</a><a href="#services">Outlets, Switches &amp; GFCI</a><a href="#services">Lighting &amp; Ceiling Fans</a><a href="#services">Troubleshooting &amp; Repairs</a></div>
+    <div><h4>Hours</h4><p>Mon-Sat: 8am - 6pm</p><p>Sun: Closed</p></div>
+  </div>
+  <div class="fbot">&copy; 2026 Mel&#x27;s Electrical. All rights reserved.</div>
+</div></footer>
+
+<style>
+#mschat{position:fixed;right:22px;bottom:22px;z-index:90;font-family:var(--font)}
+#mschat .ms-bubble{background:var(--accent);color:var(--accent-ink);font-weight:800;border:none;cursor:pointer;padding:14px 22px 14px 18px;border-radius:40px;box-shadow:0 10px 26px rgba(0,0,0,.28);display:flex;gap:9px;align-items:center;font-size:15px}
+#mschat .ms-bubble:hover{background:var(--accent-dark)}
+#mschat .ms-panel{position:absolute;right:0;bottom:66px;width:332px;max-width:86vw;background:#fff;border-radius:18px;box-shadow:0 22px 54px rgba(0,0,0,.30);overflow:hidden;display:none;flex-direction:column}
+#mschat.open .ms-panel{display:flex}
+#mschat .ms-head{background:var(--accent);color:var(--accent-ink);padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+#mschat .ms-head b{font-size:16px;display:block} #mschat .ms-head span{font-size:12px;opacity:.9}
+#mschat .ms-x{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;line-height:1}
+#mschat .ms-body{padding:16px;background:#f6f8fb}
+#mschat .ms-msg{background:#fff;border-radius:14px;padding:12px 14px;font-size:14px;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);margin-bottom:12px}
+#mschat input,#mschat textarea{width:100%;padding:11px 13px;border:1px solid #e2e6ec;border-radius:10px;margin-bottom:9px;font-size:14px;font-family:inherit}
+#mschat textarea{min-height:62px;resize:vertical}
+#mschat .ms-send{width:100%;background:var(--accent);color:var(--accent-ink);border:none;border-radius:10px;padding:12px;font-weight:800;cursor:pointer;font-size:14px}
+#mschat .ms-send:hover{background:var(--accent-dark)}
+#mschat .ms-done{text-align:center;padding:18px 6px;color:var(--primary-dark);font-weight:700;font-size:15px}
+</style>
+<div id="mschat">
+  <div class="ms-panel">
+    <div class="ms-head"><div><b>Mel&#x27;s Electrical</b><span>Typically replies in a few minutes</span></div>
+      <button class="ms-x" onclick="msChat(0)" aria-label="Close">&times;</button></div>
+    <div class="ms-body">
+      <div class="ms-msg">Hi! &#128075; Thanks for visiting Mel&#x27;s Electrical. Tell us what you need and we will text you right back.</div>
+      <div id="msForm">
+        <input id="msName" placeholder="Your name">
+        <input id="msPhone" placeholder="Phone number">
+        <textarea id="msMsg" placeholder="How can we help?"></textarea>
+        <button class="ms-send" onclick="msSend()">Send</button>
+      </div>
+      <div class="ms-done" id="msDone" style="display:none"></div>
+    </div>
+  </div>
+  <button class="ms-bubble" onclick="msChat()">&#128172; Chat with us</button>
+</div>
+<script>
+function msChat(f){var c=document.getElementById('mschat');if(f===undefined){c.classList.toggle('open');}else{c.classList.toggle('open',!!f);}}
+function msSend(){var v=document.getElementById('msName').value||'there';var n=v.split(' ')[0];document.getElementById('msForm').style.display='none';var d=document.getElementById('msDone');d.style.display='block';d.innerHTML='Thanks '+n+'! &#127881;<br>We got your message and will text you shortly.';}
+</script>
+
+<script>
+document.querySelectorAll('.qa button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var a=this.nextElementSibling, open=a.style.maxHeight && a.style.maxHeight!=='0px';
+    document.querySelectorAll('.qa .ans').forEach(function(x){x.style.maxHeight='0px'});
+    document.querySelectorAll('.qa .ic').forEach(function(x){x.textContent='+'});
+    if(!open){a.style.maxHeight=a.scrollHeight+'px';this.querySelector('.ic').textContent='-';}
+  });
+});
+</script>
+</body></html>
