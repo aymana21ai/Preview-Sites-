@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tampa Lawn Sharks | Lawn Care &amp; Landscaping in St. Petersburg, FL</title>
+<meta name="description" content="Tampa Lawn Sharks — lawn care and landscape design across St. Petersburg and Tampa Bay. Custom landscape curbing, mulch and rock beds, sod, tree and bush trimming, pressure washing, and full lawn service. 4.6 stars, 10+ years, commercial and residential.">
+<style>
+:root{
+  --primary:#163E1F; --primary-dark:#0E2C15;
+  --accent:#5AAE2E; --accent-dark:#468523; --accent-ink:#ffffff; --accent-text:#3C7A1E; --logo-h:62px; --quote-logo-h:150px;
+  --ink:#1f2733; --muted:#5b6675; --line:#e7eaef; --bg-soft:#f5f7fa; --white:#fff;
+  --radius:16px; --shadow:0 18px 40px rgba(20,30,50,.10);
+  --font:'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);line-height:1.65;background:var(--white)}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+h1,h2,h3{line-height:1.15;color:var(--primary-dark)}
+h2{font-size:34px;margin-bottom:10px}
+.eyebrow{color:var(--accent-text);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:10px}
+.center{text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;line-height:1;background:var(--accent);color:var(--accent-ink);font-weight:800;padding:15px 30px;border-radius:12px;
+  border:none;cursor:pointer;font-size:15px;letter-spacing:.3px;transition:.18s;box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.btn:hover{background:var(--accent-dark);transform:translateY(-2px)}
+.btn-sm{padding:10px 20px;font-size:14px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.10)}
+.btn-light{background:#fff;color:var(--primary-dark)}
+
+header{position:sticky;top:0;z-index:60;background:#fff;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:21px;color:var(--primary-dark)}
+.brand img{height:var(--logo-h);width:auto;max-height:110px}
+.navlinks{display:flex;gap:26px;font-weight:600}
+.navlinks a:hover{color:var(--accent)}
+.navside{display:flex;align-items:center;gap:18px}
+.phone{font-weight:800;color:var(--primary-dark);white-space:nowrap}
+@media(max-width:920px){.navlinks,.phone{display:none}}
+
+.hero{position:relative;color:#fff;background:linear-gradient(rgba(18,26,40,.62),rgba(18,26,40,.72)),url('https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn69QL5q_XVgdgckQ4kYA4oa9U75Vly8JvLbuGwgbn9romt1rh4vBxf6vjbfKNPQnbEG2U0k7PCYU8beDLpDFstjWGdm4EW7UKaeCprHUigMMEYP4wZjPlbnvuQsDO7bZybpVPoMw=w1400-h900') center/cover}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding:96px 0}
+.hero h1{color:#fff;font-size:48px;margin-bottom:8px}
+.hero .lede{font-size:25px;font-weight:600;opacity:.96;margin-bottom:14px}
+.hero p.sub{font-size:17px;opacity:.92;max-width:520px;margin-bottom:26px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.badges span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:30px;font-size:13px;font-weight:600}
+.quote{background:#fff;color:var(--ink);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.quote-logo{height:var(--quote-logo-h);max-height:190px;width:auto;margin:0 auto 16px;display:block}
+.quote h3{text-align:center;font-size:23px;margin-bottom:3px}
+.quote .qs{text-align:center;color:var(--muted);font-size:14px;margin-bottom:18px}
+.field{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;margin-bottom:12px;font-size:15px;font-family:inherit}
+textarea.field{min-height:84px;resize:vertical}
+.consent{font-size:11px;color:var(--muted);margin:4px 0 14px}
+.quote .btn{width:100%}
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr;padding:56px 0}.hero h1{font-size:34px}.hero .lede{font-size:20px}}
+
+.trust{background:var(--primary-dark);color:#fff}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:space-around;gap:16px;padding:22px}
+.trust b{font-size:15px;letter-spacing:.5px;text-transform:uppercase;display:flex;gap:9px;align-items:center}
+.trust b::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--accent)}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-grid img{border-radius:var(--radius);height:420px;width:100%;object-fit:cover;box-shadow:var(--shadow)}
+.about p{color:var(--muted);font-size:17px;margin-top:8px}
+@media(max-width:920px){.about-grid{grid-template-columns:1fr}.about-grid img{height:280px}}
+
+.services{background:var(--bg-soft)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.2s}
+.card:hover{transform:translateY(-6px)}
+.card img{height:190px;width:100%;object-fit:cover}
+.card .cb{padding:22px}
+.card h3{font-size:20px;margin-bottom:8px;color:var(--primary-dark)}
+.card p{color:var(--muted);font-size:14.5px}
+@media(max-width:920px){.cards{grid-template-columns:1fr}}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:42px}
+.step{text-align:center}
+.step .n{width:66px;height:66px;border-radius:50%;background:var(--primary);color:#fff;font-size:26px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.step h3{margin-bottom:6px} .step p{color:var(--muted);font-size:15px}
+@media(max-width:920px){.steps{grid-template-columns:1fr}}
+
+.gallery{background:var(--bg-soft)}
+.grid-imgs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+.grid-imgs img{height:180px;width:100%;object-fit:cover;border-radius:12px}
+@media(max-width:920px){.grid-imgs{grid-template-columns:repeat(2,1fr)}}
+
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.review{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.stars{color:#f5b50a;font-size:18px;margin-bottom:10px}
+.review p{color:#39424f;font-size:15px} .review .who{margin-top:14px;font-weight:800;color:var(--primary-dark)}
+@media(max-width:920px){.rev{grid-template-columns:1fr}}
+
+.faq{max-width:840px;margin:36px auto 0}
+.qa{border-bottom:1px solid var(--line)}
+.qa button{width:100%;text-align:left;background:none;border:none;padding:20px 0;font-size:17px;font-weight:700;
+  color:var(--primary-dark);cursor:pointer;display:flex;justify-content:space-between;gap:16px;font-family:inherit}
+.qa .ic{color:var(--accent-text);font-size:24px;line-height:1}
+.qa .ans{max-height:0;overflow:hidden;transition:max-height .28s ease}
+.qa .ans p{padding-bottom:18px;color:var(--muted);font-size:15.5px}
+
+.areas{background:var(--primary-dark);color:#fff}
+.areas h2{color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.chips span{background:rgba(255,255,255,.12);padding:10px 20px;border-radius:30px;font-weight:600}
+
+.final{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;text-align:center}
+.final h2{color:#fff;font-size:38px} .final p{font-size:19px;opacity:.95;margin:10px 0 26px}
+
+footer{background:#161d28;color:#aab4c2;padding:56px 0 26px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;text-transform:uppercase;letter-spacing:1px;font-size:15px;margin-bottom:14px}
+footer a{display:block;margin-bottom:7px} footer a:hover{color:#fff}
+.fbrand{font-weight:800;font-size:21px;color:#fff;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.fbrand img{height:38px}
+.fbot{border-top:1px solid #2a3340;margin-top:34px;padding-top:18px;text-align:center;color:#7f8a99;font-size:13px}
+@media(max-width:920px){.fgrid{grid-template-columns:1fr 1fr}}
+</style></head>
+<body>
+
+<header><div class="wrap"><nav>
+  <a href="#home" class="brand"><img src="https://scontent-mia3-3.xx.fbcdn.net/v/t1.6435-1/122292983_10225086531693032_2161837867578829337_n.jpg?stp=cp0_dst-jpg_tt6&amp;cstp=mx943x943&amp;_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=e99d92&amp;_nc_ohc=IYccMC5lRp8Q7kNvwFrSPEo&amp;_nc_oc=AdpTdrx2DFz5V5SQcfq95JM71gmnuSTzr-6GV9ZCMKpzPVz0zK0HtGJL8l_XMQ4_8W8&amp;_nc_zt=24&amp;_nc_ht=scontent-mia3-3.xx&amp;_nc_gid=3Novd58N881I2AFHyCwEHQ&amp;_nc_ss=7a2a8&amp;oh=00_AQHU43Dyzspgdbdy04T9cAxxgv2-e-hU6-as53R6PdhoSw&amp;oe=6A92C46F" alt="Tampa Lawn Sharks"></a>
+  <div class="navlinks">
+    <a href="#services">Services</a><a href="#about">About</a>
+    <a href="#gallery">Gallery</a><a href="#areas">Areas</a><a href="#contact">Contact</a>
+  </div>
+  <div class="navside"><span class="phone">(727) 804-3400</span><a href="#contact" class="btn btn-sm">Free Quote</a></div>
+</nav></div></header>
+
+<section class="hero" id="home"><div class="wrap"><div class="hero-grid">
+  <div>
+    <h1>Lawn Care &amp; Landscaping in St. Petersburg, FL</h1>
+    <div class="lede">Commercial &amp; Residential — Sharp Every Time</div>
+    <p class="sub">Full-service lawn care and custom landscape design across St. Petersburg and Tampa Bay. Landscape curbing, mulch and rock beds, sod, tree and bush trimming, pressure washing, and weekly lawn service — done by a crew that&#x27;s been making yards sharp for over 10 years. Free estimates.</p>
+    <a href="#contact" class="btn">Get a Free Quote</a>
+    <div class="badges"><span>4.6★ · 98 Google Reviews</span><span>10+ Years Experience</span><span>Free Estimates</span><span>Commercial &amp; Residential</span></div>
+  </div>
+  <div class="quote" id="contact">
+    <img class="quote-logo" src="https://scontent-mia3-3.xx.fbcdn.net/v/t1.6435-1/122292983_10225086531693032_2161837867578829337_n.jpg?stp=cp0_dst-jpg_tt6&amp;cstp=mx943x943&amp;_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=e99d92&amp;_nc_ohc=IYccMC5lRp8Q7kNvwFrSPEo&amp;_nc_oc=AdpTdrx2DFz5V5SQcfq95JM71gmnuSTzr-6GV9ZCMKpzPVz0zK0HtGJL8l_XMQ4_8W8&amp;_nc_zt=24&amp;_nc_ht=scontent-mia3-3.xx&amp;_nc_gid=3Novd58N881I2AFHyCwEHQ&amp;_nc_ss=7a2a8&amp;oh=00_AQHU43Dyzspgdbdy04T9cAxxgv2-e-hU6-as53R6PdhoSw&amp;oe=6A92C46F" alt="Tampa Lawn Sharks"><h3>Get a Free Quote</h3><div class="qs">We'll get back to you the same day.</div>
+    <input class="field" placeholder="Full Name *">
+    <input class="field" placeholder="Phone *">
+    <textarea class="field" placeholder="Tell us about your project *"></textarea>
+    <div class="consent">By providing your phone number you agree to receive text messages from Tampa Lawn Sharks.</div>
+    <button class="btn">Send</button>
+  </div>
+</div></div></section>
+
+<div class="trust"><div class="wrap"><b>4.6★ (98 Google reviews)</b><b>10+ Years Experience</b><b>Commercial &amp; Residential</b><b>Locally Owned</b></div></div>
+
+<section class="about" id="about"><div class="wrap about-grid">
+  <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlm0H3Yh5nSmZuKm87JDqwR7UeCdkumXOWK6oKejiReuI_57KP2c6eyfCSLezyubYSA-b_iRDRrnj-2JlTREhCLb8ZuOd8Jj3a_txyx4D5AxPk4KVx7bdAL0Bb01nGERP2Ip-1_1g=w1000-h750" alt="Tampa Lawn Sharks">
+  <div><div class="eyebrow">About Us</div><h2>Tampa Bay&#x27;s Lawn &amp; Landscape Pros</h2><p>Tampa Lawn Sharks is a locally owned lawn care and landscaping company with over 10 years of experience serving St. Petersburg, Tampa, and the greater Tampa Bay area. Owner Curtis and his crew handle it all for both commercial and residential properties — weekly lawn service, custom landscape design, our signature landscape curbing, mulch and rock beds, sod installation and removal, tree and bush trimming, seasonal color, and pressure washing. We show up on time, communicate clearly, price fairly, and leave every property looking sharp. Every project starts with a free estimate.</p>
+    <p style="margin-top:14px"><a href="#contact" class="btn">Get a Free Quote</a></p></div>
+</div></section>
+
+<section class="services" id="services"><div class="wrap center">
+  <div class="eyebrow">Our Services</div><h2>Our Lawn &amp; Landscape Services</h2>
+  <div class="cards" style="text-align:left"><div class="card"><img src="https://images.pexels.com/photos/12087398/pexels-photo-12087398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Lawn Care &amp; Mowing"><div class="cb"><h3>Lawn Care &amp; Mowing</h3><p>Reliable weekly and biweekly lawn service — mowing, edging, and blowing — that keeps your property looking clean and cared for year-round.</p></div></div><div class="card"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnQa-C2Feof2XafdocGfObaQxBBjVz0JcshJR4yztvlwsp_h1mEddE3612FCGaMS0EGyLT_wD430wTaf4_Ja7FAYK8Vl0rTGdNOORxkCQBEAVB2sfDgDe-VTsm_jr6Z0TjZVLVUdQ=w1000-h750" alt="Custom Landscape Curbing"><div class="cb"><h3>Custom Landscape Curbing</h3><p>Our signature service — durable, decorative concrete curbing that frames your beds and driveway with a clean, custom finish.</p></div></div><div class="card"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnQo73D8lurwhsurD1UcrPJYaeqZcRKye2A_a70xgIeUl6WxbRnbx1gxRfFyATGhJ1FeiBlXEFUuFxzuH3VKGKlEJohATl0MXQx6lLKPkrS1plttrPBzXr5WyPyLR_MQ5JSWUQ=w1000-h750" alt="Landscape Design &amp; Installation"><div class="cb"><h3>Landscape Design &amp; Installation</h3><p>Full custom landscapes — plants, rock, crushed shell, stepping stones, and beds designed and installed to transform your yard.</p></div></div><div class="card"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn8gmvCyE_BQX6jQjjrhd-4WgBcyz6ht7EruFfSJwClnuITlRrDPmAWPhrRUdP07dPLpwAlKi3zEZBfU_P0JQiSz1ys0B6smTAWa6Ah3ygxHqTq-6GxrN6v-V9Wx8up3D-iqow=w1000-h750" alt="Mulch, Rock &amp; Bed Maintenance"><div class="cb"><h3>Mulch, Rock &amp; Bed Maintenance</h3><p>Fresh mulch, decorative rock, seasonal color, and tidy, weed-free beds that keep your landscape sharp all season.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/32427440/pexels-photo-32427440.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Tree &amp; Bush Trimming"><div class="cb"><h3>Tree &amp; Bush Trimming</h3><p>Trees, palms, hedges, and shrubs trimmed and shaped to keep your property healthy, safe, and looking its best.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/14965464/pexels-photo-14965464.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Pressure Washing &amp; Yard Cleanups"><div class="cb"><h3>Pressure Washing &amp; Yard Cleanups</h3><p>Driveways, walkways, and patios pressure washed, plus full yard cleanups and sod removal to reset overgrown or tired spaces.</p></div></div></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">The Process</div><h2>Simple 3-Step Process</h2>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>Contact Us</h3><p>Fill out the free quote form and tell us about your project.</p></div>
+    <div class="step"><div class="n">2</div><h3>Free Estimate</h3><p>We visit at a time that works for you and provide a clear, honest estimate.</p></div>
+    <div class="step"><div class="n">3</div><h3>Get It Done</h3><p>Approve the estimate and we schedule the work and deliver results you'll love.</p></div>
+  </div>
+</div></section>
+
+<section class="gallery" id="gallery"><div class="wrap center">
+  <div class="eyebrow">Our Work</div><h2>Recent Projects</h2>
+  <div class="grid-imgs"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnQo73D8lurwhsurD1UcrPJYaeqZcRKye2A_a70xgIeUl6WxbRnbx1gxRfFyATGhJ1FeiBlXEFUuFxzuH3VKGKlEJohATl0MXQx6lLKPkrS1plttrPBzXr5WyPyLR_MQ5JSWUQ=w1000-h750" alt="Tampa Lawn Sharks project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkjRR8fLgHeKQZ0gYmxdyXbSuwuLJ0F8j0lobb4Cem63vSL7A4Xp4yS6XSWkKy4Z0ASP3-k4Z3dx0s7J7CX61RbWy4vQEyp0Bu3q2560T5g4iXFHgVs8AlLEMgkqiDyhwv5CJouoQ=w1000-h750" alt="Tampa Lawn Sharks project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn69QL5q_XVgdgckQ4kYA4oa9U75Vly8JvLbuGwgbn9romt1rh4vBxf6vjbfKNPQnbEG2U0k7PCYU8beDLpDFstjWGdm4EW7UKaeCprHUigMMEYP4wZjPlbnvuQsDO7bZybpVPoMw=w1000-h750" alt="Tampa Lawn Sharks project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnQa-C2Feof2XafdocGfObaQxBBjVz0JcshJR4yztvlwsp_h1mEddE3612FCGaMS0EGyLT_wD430wTaf4_Ja7FAYK8Vl0rTGdNOORxkCQBEAVB2sfDgDe-VTsm_jr6Z0TjZVLVUdQ=w1000-h750" alt="Tampa Lawn Sharks project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn8gmvCyE_BQX6jQjjrhd-4WgBcyz6ht7EruFfSJwClnuITlRrDPmAWPhrRUdP07dPLpwAlKi3zEZBfU_P0JQiSz1ys0B6smTAWa6Ah3ygxHqTq-6GxrN6v-V9Wx8up3D-iqow=w1000-h750" alt="Tampa Lawn Sharks project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkcTwDgTk6TOtQr-3xWhGPnzwYsiJ8h4E3XhOE8pAO2S9NStX8DWf8VwRo3BzuZ43Son6PR9urr5Uybbr6wJedckZ0tFcmLDk5oNwShXVcakyzzTIxrZ1LzX3KWl1WHMMa8GbZ7rw=w1000-h750" alt="Tampa Lawn Sharks project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlm0H3Yh5nSmZuKm87JDqwR7UeCdkumXOWK6oKejiReuI_57KP2c6eyfCSLezyubYSA-b_iRDRrnj-2JlTREhCLb8ZuOd8Jj3a_txyx4D5AxPk4KVx7bdAL0Bb01nGERP2Ip-1_1g=w1000-h750" alt="Tampa Lawn Sharks project"><img src="https://images.pexels.com/photos/12087398/pexels-photo-12087398.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Tampa Lawn Sharks project"></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">Reviews</div><h2>What Customers Say</h2>
+  <div class="rev" style="text-align:left"><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Curtis and his team helped clean up our overgrown landscape and did an amazing job. Very efficient, communicative, and fair prices. We will definitely use Tampa Lawn Sharks for all our future landscaping needs.</p><div class="who">&mdash; Kelly R.</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>I was very happy with Curtis&#x27; work. My garden area was badly in need of work. Without knowing exactly what I wanted, he made it look wonderful — the right plants, pavers, and crushed shells to give it that &#x27;beachy&#x27; garden feel.</p><div class="who">&mdash; Beth T.</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Curt and his team just finished a project at my home and I am thoroughly impressed with the quality of the work. Professional from start to finish — highly recommend.</p><div class="who">&mdash; Kyle W.</div></div></div>
+</div></section>
+
+<section class="services"><div class="wrap">
+  <h2 class="center">Frequently Asked Questions</h2>
+  <div class="faq"><div class="qa"><button>What areas do you serve?<span class="ic">+</span></button><div class="ans"><p>We&#x27;re based in St. Petersburg and serve the greater Tampa Bay area, including Tampa, Clearwater, Largo, Pinellas Park, Seminole, and the beaches — commercial and residential.</p></div></div><div class="qa"><button>What is landscape curbing?<span class="ic">+</span></button><div class="ans"><p>Custom concrete curbing is decorative edging poured on-site to frame your beds, trees, and driveway. It&#x27;s a signature service of ours and gives any yard a clean, finished look.</p></div></div><div class="qa"><button>Do you offer weekly lawn service?<span class="ic">+</span></button><div class="ans"><p>Yes — we offer weekly and biweekly lawn maintenance, plus one-time cleanups, on flexible schedules for homes and businesses.</p></div></div><div class="qa"><button>Do you offer free estimates?<span class="ic">+</span></button><div class="ans"><p>Yes — every project starts with a free, no-obligation estimate. Tell us what you need and we&#x27;ll give you a clear, fair price.</p></div></div></div>
+</div></section>
+
+<section class="areas" id="areas"><div class="wrap center">
+  <div class="eyebrow" style="color:var(--accent-text)">Service Area</div>
+  <h2>Proudly Serving St. Petersburg &amp; Nearby</h2>
+  <div class="chips"><span>St. Petersburg</span><span>Tampa</span><span>Clearwater</span><span>Largo</span><span>Pinellas Park</span><span>Seminole</span><span>St. Pete Beach</span><span>Gulfport</span><span>Kenneth City</span><span>Treasure Island</span></div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Ready to Get Started?</h2><p>Get your free lawn &amp; landscape quote today.</p>
+  <a href="#contact" class="btn btn-light">Get a Free Quote</a>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><div class="fbrand"><img src="https://scontent-mia3-3.xx.fbcdn.net/v/t1.6435-1/122292983_10225086531693032_2161837867578829337_n.jpg?stp=cp0_dst-jpg_tt6&amp;cstp=mx943x943&amp;_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=e99d92&amp;_nc_ohc=IYccMC5lRp8Q7kNvwFrSPEo&amp;_nc_oc=AdpTdrx2DFz5V5SQcfq95JM71gmnuSTzr-6GV9ZCMKpzPVz0zK0HtGJL8l_XMQ4_8W8&amp;_nc_zt=24&amp;_nc_ht=scontent-mia3-3.xx&amp;_nc_gid=3Novd58N881I2AFHyCwEHQ&amp;_nc_ss=7a2a8&amp;oh=00_AQHU43Dyzspgdbdy04T9cAxxgv2-e-hU6-as53R6PdhoSw&amp;oe=6A92C46F" alt="Tampa Lawn Sharks"></div>
+      <p>Quality lawn &amp; landscape services across St. Petersburg and the surrounding area.</p>
+      <p style="margin-top:12px;color:#fff;font-weight:700">(727) 804-3400</p></div>
+    <div><h4>Company</h4><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+    <div><h4>Services</h4><a href="#services">Lawn Care &amp; Mowing</a><a href="#services">Custom Landscape Curbing</a><a href="#services">Landscape Design &amp; Installation</a><a href="#services">Mulch, Rock &amp; Bed Maintenance</a><a href="#services">Tree &amp; Bush Trimming</a></div>
+    <div><h4>Hours</h4><p>Mon-Sat: 8am - 6pm</p><p>Sun: Closed</p></div>
+  </div>
+  <div class="fbot">&copy; 2026 Tampa Lawn Sharks. All rights reserved.</div>
+</div></footer>
+
+<style>
+#mschat{position:fixed;right:22px;bottom:22px;z-index:90;font-family:var(--font)}
+#mschat .ms-bubble{background:var(--accent);color:var(--accent-ink);font-weight:800;border:none;cursor:pointer;padding:14px 22px 14px 18px;border-radius:40px;box-shadow:0 10px 26px rgba(0,0,0,.28);display:flex;gap:9px;align-items:center;font-size:15px}
+#mschat .ms-bubble:hover{background:var(--accent-dark)}
+#mschat .ms-panel{position:absolute;right:0;bottom:66px;width:332px;max-width:86vw;background:#fff;border-radius:18px;box-shadow:0 22px 54px rgba(0,0,0,.30);overflow:hidden;display:none;flex-direction:column}
+#mschat.open .ms-panel{display:flex}
+#mschat .ms-head{background:var(--accent);color:var(--accent-ink);padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+#mschat .ms-head b{font-size:16px;display:block} #mschat .ms-head span{font-size:12px;opacity:.9}
+#mschat .ms-x{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;line-height:1}
+#mschat .ms-body{padding:16px;background:#f6f8fb}
+#mschat .ms-msg{background:#fff;border-radius:14px;padding:12px 14px;font-size:14px;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);margin-bottom:12px}
+#mschat input,#mschat textarea{width:100%;padding:11px 13px;border:1px solid #e2e6ec;border-radius:10px;margin-bottom:9px;font-size:14px;font-family:inherit}
+#mschat textarea{min-height:62px;resize:vertical}
+#mschat .ms-send{width:100%;background:var(--accent);color:var(--accent-ink);border:none;border-radius:10px;padding:12px;font-weight:800;cursor:pointer;font-size:14px}
+#mschat .ms-send:hover{background:var(--accent-dark)}
+#mschat .ms-done{text-align:center;padding:18px 6px;color:var(--primary-dark);font-weight:700;font-size:15px}
+</style>
+<div id="mschat">
+  <div class="ms-panel">
+    <div class="ms-head"><div><b>Tampa Lawn Sharks</b><span>Typically replies in a few minutes</span></div>
+      <button class="ms-x" onclick="msChat(0)" aria-label="Close">&times;</button></div>
+    <div class="ms-body">
+      <div class="ms-msg">Hi! &#128075; Thanks for visiting Tampa Lawn Sharks. Tell us what you need and we will text you right back.</div>
+      <div id="msForm">
+        <input id="msName" placeholder="Your name">
+        <input id="msPhone" placeholder="Phone number">
+        <textarea id="msMsg" placeholder="How can we help?"></textarea>
+        <button class="ms-send" onclick="msSend()">Send</button>
+      </div>
+      <div class="ms-done" id="msDone" style="display:none"></div>
+    </div>
+  </div>
+  <button class="ms-bubble" onclick="msChat()">&#128172; Chat with us</button>
+</div>
+<script>
+function msChat(f){var c=document.getElementById('mschat');if(f===undefined){c.classList.toggle('open');}else{c.classList.toggle('open',!!f);}}
+function msSend(){var v=document.getElementById('msName').value||'there';var n=v.split(' ')[0];document.getElementById('msForm').style.display='none';var d=document.getElementById('msDone');d.style.display='block';d.innerHTML='Thanks '+n+'! &#127881;<br>We got your message and will text you shortly.';}
+</script>
+
+<script>
+document.querySelectorAll('.qa button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var a=this.nextElementSibling, open=a.style.maxHeight && a.style.maxHeight!=='0px';
+    document.querySelectorAll('.qa .ans').forEach(function(x){x.style.maxHeight='0px'});
+    document.querySelectorAll('.qa .ic').forEach(function(x){x.textContent='+'});
+    if(!open){a.style.maxHeight=a.scrollHeight+'px';this.querySelector('.ic').textContent='-';}
+  });
+});
+</script>
+</body></html>
