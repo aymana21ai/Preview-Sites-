@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Noah&#x27;s Barks and Purrs | Pet Grooming &amp; Boarding in Fort Walton Beach, FL</title>
+<meta name="description" content="Noah&#x27;s Barks and Purrs — professional dog and cat grooming plus pet boarding in Fort Walton Beach, FL. Full grooms, breed cuts, bath and brush, nail trims, and overnight boarding from $25. 4.5 stars from 82 reviews.">
+<style>
+:root{
+  --primary:#33302C; --primary-dark:#24211E;
+  --accent:#C98A3C; --accent-dark:#A86F2C; --accent-ink:#17110A; --accent-text:#8F5D22; --logo-h:62px; --quote-logo-h:150px;
+  --ink:#1f2733; --muted:#5b6675; --line:#e7eaef; --bg-soft:#f5f7fa; --white:#fff;
+  --radius:16px; --shadow:0 18px 40px rgba(20,30,50,.10);
+  --font:'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);line-height:1.65;background:var(--white)}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+h1,h2,h3{line-height:1.15;color:var(--primary-dark)}
+h2{font-size:34px;margin-bottom:10px}
+.eyebrow{color:var(--accent-text);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:10px}
+.center{text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;line-height:1;background:var(--accent);color:var(--accent-ink);font-weight:800;padding:15px 30px;border-radius:12px;
+  border:none;cursor:pointer;font-size:15px;letter-spacing:.3px;transition:.18s;box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.btn:hover{background:var(--accent-dark);transform:translateY(-2px)}
+.btn-sm{padding:10px 20px;font-size:14px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.10)}
+.btn-light{background:#fff;color:var(--primary-dark)}
+
+header{position:sticky;top:0;z-index:60;background:#fff;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:21px;color:var(--primary-dark)}
+.brand img{height:var(--logo-h);width:auto;max-height:110px}
+.navlinks{display:flex;gap:26px;font-weight:600}
+.navlinks a:hover{color:var(--accent)}
+.navside{display:flex;align-items:center;gap:18px}
+.phone{font-weight:800;color:var(--primary-dark);white-space:nowrap}
+@media(max-width:920px){.navlinks,.phone{display:none}}
+
+.hero{position:relative;color:#fff;background:linear-gradient(rgba(18,26,40,.62),rgba(18,26,40,.72)),url('https://images.pexels.com/photos/6816837/pexels-photo-6816837.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding:96px 0}
+.hero h1{color:#fff;font-size:48px;margin-bottom:8px}
+.hero .lede{font-size:25px;font-weight:600;opacity:.96;margin-bottom:14px}
+.hero p.sub{font-size:17px;opacity:.92;max-width:520px;margin-bottom:26px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.badges span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:30px;font-size:13px;font-weight:600}
+.quote{background:#fff;color:var(--ink);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.quote-logo{height:var(--quote-logo-h);max-height:190px;width:auto;margin:0 auto 16px;display:block}
+.quote h3{text-align:center;font-size:23px;margin-bottom:3px}
+.quote .qs{text-align:center;color:var(--muted);font-size:14px;margin-bottom:18px}
+.field{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;margin-bottom:12px;font-size:15px;font-family:inherit}
+textarea.field{min-height:84px;resize:vertical}
+.consent{font-size:11px;color:var(--muted);margin:4px 0 14px}
+.quote .btn{width:100%}
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr;padding:56px 0}.hero h1{font-size:34px}.hero .lede{font-size:20px}}
+
+.trust{background:var(--primary-dark);color:#fff}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:space-around;gap:16px;padding:22px}
+.trust b{font-size:15px;letter-spacing:.5px;text-transform:uppercase;display:flex;gap:9px;align-items:center}
+.trust b::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--accent)}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-grid img{border-radius:var(--radius);height:420px;width:100%;object-fit:cover;box-shadow:var(--shadow)}
+.about p{color:var(--muted);font-size:17px;margin-top:8px}
+@media(max-width:920px){.about-grid{grid-template-columns:1fr}.about-grid img{height:280px}}
+
+.services{background:var(--bg-soft)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.2s}
+.card:hover{transform:translateY(-6px)}
+.card img{height:190px;width:100%;object-fit:cover}
+.card .cb{padding:22px}
+.card h3{font-size:20px;margin-bottom:8px;color:var(--primary-dark)}
+.card p{color:var(--muted);font-size:14.5px}
+@media(max-width:920px){.cards{grid-template-columns:1fr}}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:42px}
+.step{text-align:center}
+.step .n{width:66px;height:66px;border-radius:50%;background:var(--primary);color:#fff;font-size:26px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.step h3{margin-bottom:6px} .step p{color:var(--muted);font-size:15px}
+@media(max-width:920px){.steps{grid-template-columns:1fr}}
+
+.gallery{background:var(--bg-soft)}
+.grid-imgs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+.grid-imgs img{height:180px;width:100%;object-fit:cover;border-radius:12px}
+@media(max-width:920px){.grid-imgs{grid-template-columns:repeat(2,1fr)}}
+
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.review{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.stars{color:#f5b50a;font-size:18px;margin-bottom:10px}
+.review p{color:#39424f;font-size:15px} .review .who{margin-top:14px;font-weight:800;color:var(--primary-dark)}
+@media(max-width:920px){.rev{grid-template-columns:1fr}}
+
+.faq{max-width:840px;margin:36px auto 0}
+.qa{border-bottom:1px solid var(--line)}
+.qa button{width:100%;text-align:left;background:none;border:none;padding:20px 0;font-size:17px;font-weight:700;
+  color:var(--primary-dark);cursor:pointer;display:flex;justify-content:space-between;gap:16px;font-family:inherit}
+.qa .ic{color:var(--accent-text);font-size:24px;line-height:1}
+.qa .ans{max-height:0;overflow:hidden;transition:max-height .28s ease}
+.qa .ans p{padding-bottom:18px;color:var(--muted);font-size:15.5px}
+
+.areas{background:var(--primary-dark);color:#fff}
+.areas h2{color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.chips span{background:rgba(255,255,255,.12);padding:10px 20px;border-radius:30px;font-weight:600}
+
+.final{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;text-align:center}
+.final h2{color:#fff;font-size:38px} .final p{font-size:19px;opacity:.95;margin:10px 0 26px}
+
+footer{background:#161d28;color:#aab4c2;padding:56px 0 26px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;text-transform:uppercase;letter-spacing:1px;font-size:15px;margin-bottom:14px}
+footer a{display:block;margin-bottom:7px} footer a:hover{color:#fff}
+.fbrand{font-weight:800;font-size:21px;color:#fff;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.fbrand img{height:38px}
+.fbot{border-top:1px solid #2a3340;margin-top:34px;padding-top:18px;text-align:center;color:#7f8a99;font-size:13px}
+@media(max-width:920px){.fgrid{grid-template-columns:1fr 1fr}}
+</style></head>
+<body>
+
+<header><div class="wrap"><nav>
+  <a href="#home" class="brand"><img src="logo.svg" alt="Noah&#x27;s Barks and Purrs"></a>
+  <div class="navlinks">
+    <a href="#services">Services</a><a href="#about">About</a>
+    <a href="#gallery">Gallery</a><a href="#areas">Areas</a><a href="#contact">Contact</a>
+  </div>
+  <div class="navside"><span class="phone">(850) 226-6321</span><a href="#contact" class="btn btn-sm">Free Quote</a></div>
+</nav></div></header>
+
+<section class="hero" id="home"><div class="wrap"><div class="hero-grid">
+  <div>
+    <h1>Pet Grooming &amp; Boarding in Fort Walton Beach, FL</h1>
+    <div class="lede">Dogs, Cats, and Everything In Between</div>
+    <p class="sub">Full-service grooming and overnight boarding for dogs and cats in Fort Walton Beach. Breed cuts, bath and brush, nail trims, and boarding starting at $25 a night — from a team your pets actually get excited to see. 4.5 stars across 82 reviews.</p>
+    <a href="#contact" class="btn">Get a Free Quote</a>
+    <div class="badges"><span>4.5 ★ · 82 Google Reviews</span><span>Dogs &amp; Cats Welcome</span><span>Boarding from $25/Night</span><span>Chamber Member</span></div>
+  </div>
+  <div class="quote" id="contact">
+    <img class="quote-logo" src="logo.svg" alt="Noah&#x27;s Barks and Purrs"><h3>Get a Free Quote</h3><div class="qs">We'll get back to you the same day.</div>
+    <input class="field" placeholder="Full Name *">
+    <input class="field" placeholder="Phone *">
+    <textarea class="field" placeholder="Tell us about your project *"></textarea>
+    <div class="consent">By providing your phone number you agree to receive text messages from Noah&#x27;s Barks and Purrs.</div>
+    <button class="btn">Send</button>
+  </div>
+</div></div></section>
+
+<div class="trust"><div class="wrap"><b>4.5★ (82 Google reviews)</b><b>Grooming &amp; Boarding</b><b>Dogs and Cats</b><b>Locally Owned in FWB</b></div></div>
+
+<section class="about" id="about"><div class="wrap about-grid">
+  <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmkKvIJEVF9aCUsMi8Bn-I0LTC8bTJ1x3xm1698HcQMtkAuPqHa20Fj8DV-GgmsZYuIjvGxfz7l2fAzPZnOl0XHzQAJUlRfETnWxN_w2h51LzJa7SixrnIafAhWHMjJi5gLb0I=w1000-h750" alt="Noah&#x27;s Barks and Purrs">
+  <div><div class="eyebrow">About Us</div><h2>Fort Walton Beach&#x27;s Grooming &amp; Boarding Home</h2><p>Noah&#x27;s Barks and Purrs is a locally owned grooming and boarding business on Racetrack Road in Fort Walton Beach. We handle both sides of pet care under one roof — full grooming for dogs and cats, plus overnight boarding when you travel. Our groomers, Stormy and Sunny, have built a following of regulars who come back month after month, including the big doodles and double-coated breeds other shops turn away. Clients tell us two things over and over: their pets come home smelling clean for weeks, and they get exactly the cut they asked for. We&#x27;re proud members of the Fort Walton Beach Chamber of Commerce, and with 82 reviews at 4.5 stars, we&#x27;ve earned a lot of trust in this town.</p>
+    <p style="margin-top:14px"><a href="#contact" class="btn">Get a Free Quote</a></p></div>
+</div></section>
+
+<section class="services" id="services"><div class="wrap center">
+  <div class="eyebrow">Our Services</div><h2>Grooming &amp; Boarding Services</h2>
+  <div class="cards" style="text-align:left"><div class="card"><img src="https://images.pexels.com/photos/19145884/pexels-photo-19145884.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Full Dog Grooming"><div class="cb"><h3>Full Dog Grooming</h3><p>Bath, blow-dry, haircut, nails, and ears — the complete groom, finished the way you asked for it, not a one-size-fits-all trim.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/6816838/pexels-photo-6816838.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Cat Grooming"><div class="cb"><h3>Cat Grooming</h3><p>Yes, we groom cats. Gentle brushing, de-matting, sanitary trims, and full grooms handled patiently by people who know feline body language.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/19145895/pexels-photo-19145895.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Bath &amp; Brush"><div class="cb"><h3>Bath &amp; Brush</h3><p>A thorough wash, deep brush-out, and blow-dry that leaves your pet clean, fluffy, and smelling great for weeks — not days.</p></div></div><div class="card"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkd5AGLAOqCuZK8WQr-ckZVix8PKYWVD-XKO4prvyWExgZszXQtD3qaZKw5YyTvzm_tJ8OW6scXHNAc0xtCCaVhagZunoTztJRMtVvuFL1xbvdRJO_oMRNCBIbLqvxDd6lncuCthBooz9cB=w1000-h750" alt="Breed Cuts &amp; Hand Scissoring"><div class="cb"><h3>Breed Cuts &amp; Hand Scissoring</h3><p>Doodles, poodles, and double coats done right — breed-standard cuts and hand-scissored finishes, including the big high-maintenance coats.</p></div></div><div class="card"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlcF8GLIau1Yc0093bchXkfhpM7iyy2qVtp8rHrAk_TvXBp11FHH807zSCemWcAuvyD_F9rHYjEuRUkFtDMaO8D-fL0UIiY3kzan4kHmJN-bQzOoXzWv1dZe0F0s5jp9nF2BT8=w1000-h750" alt="Pet Boarding"><div class="cb"><h3>Pet Boarding</h3><p>Overnight boarding starting at $25 for pets up to 20 lbs and $30 up to 50 lbs, in a supervised space where your pet is looked after, not just housed.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/19145889/pexels-photo-19145889.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Nail Trims &amp; Quick Services"><div class="cb"><h3>Nail Trims &amp; Quick Services</h3><p>Nail trims, ear cleaning, teeth brushing, and de-shedding — walk-in-friendly extras between full grooming appointments.</p></div></div></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">The Process</div><h2>Simple 3-Step Process</h2>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>Contact Us</h3><p>Fill out the free quote form and tell us about your project.</p></div>
+    <div class="step"><div class="n">2</div><h3>Free Estimate</h3><p>We visit at a time that works for you and provide a clear, honest estimate.</p></div>
+    <div class="step"><div class="n">3</div><h3>Get It Done</h3><p>Approve the estimate and we schedule the work and deliver results you'll love.</p></div>
+  </div>
+</div></section>
+
+<section class="gallery" id="gallery"><div class="wrap center">
+  <div class="eyebrow">Our Work</div><h2>Recent Projects</h2>
+  <div class="grid-imgs"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkd5AGLAOqCuZK8WQr-ckZVix8PKYWVD-XKO4prvyWExgZszXQtD3qaZKw5YyTvzm_tJ8OW6scXHNAc0xtCCaVhagZunoTztJRMtVvuFL1xbvdRJO_oMRNCBIbLqvxDd6lncuCthBooz9cB=w1000-h750" alt="Noah&#x27;s Barks and Purrs project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmkKvIJEVF9aCUsMi8Bn-I0LTC8bTJ1x3xm1698HcQMtkAuPqHa20Fj8DV-GgmsZYuIjvGxfz7l2fAzPZnOl0XHzQAJUlRfETnWxN_w2h51LzJa7SixrnIafAhWHMjJi5gLb0I=w1000-h750" alt="Noah&#x27;s Barks and Purrs project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlcF8GLIau1Yc0093bchXkfhpM7iyy2qVtp8rHrAk_TvXBp11FHH807zSCemWcAuvyD_F9rHYjEuRUkFtDMaO8D-fL0UIiY3kzan4kHmJN-bQzOoXzWv1dZe0F0s5jp9nF2BT8=w1000-h750" alt="Noah&#x27;s Barks and Purrs project"><img src="https://images.pexels.com/photos/7635904/pexels-photo-7635904.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Noah&#x27;s Barks and Purrs project"><img src="https://images.pexels.com/photos/6816837/pexels-photo-6816837.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Noah&#x27;s Barks and Purrs project"><img src="https://images.pexels.com/photos/6131084/pexels-photo-6131084.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Noah&#x27;s Barks and Purrs project"><img src="https://images.pexels.com/photos/9428205/pexels-photo-9428205.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Noah&#x27;s Barks and Purrs project"><img src="https://images.pexels.com/photos/36958305/pexels-photo-36958305.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Noah&#x27;s Barks and Purrs project"></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">Reviews</div><h2>What Customers Say</h2>
+  <div class="rev" style="text-align:left"><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>We have been taking Stella to Noah&#x27;s for over a year. Stormy always does a great job with Stella&#x27;s hair. She&#x27;s an 80-pound Bernedoodle and her hair grows really fast, so she needs almost monthly grooming.</p><div class="who">&mdash; Keith W.</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>They are the best! My dogs smell so good for weeks. Stormy and Sunny take pride in their work and it shows. They love animals and I wouldn&#x27;t trust anyone else with my dogs.</p><div class="who">&mdash; Ilene</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Highly recommend Noah&#x27;s Barks and Purrs! They did such an amazing job on my Morkie — he looks so precious and they did exactly as I asked!</p><div class="who">&mdash; Meagan E.</div></div></div>
+</div></section>
+
+<section class="services"><div class="wrap">
+  <h2 class="center">Frequently Asked Questions</h2>
+  <div class="faq"><div class="qa"><button>Do you groom cats as well as dogs?<span class="ic">+</span></button><div class="ans"><p>Yes — the &#x27;Purrs&#x27; is not just for show. We groom cats as well as dogs, including brushing, de-matting, sanitary trims, and full grooms.</p></div></div><div class="qa"><button>How much does boarding cost?<span class="ic">+</span></button><div class="ans"><p>Boarding starts at $25 per night for pets up to 20 lbs and $30 per night up to 50 lbs. Call us for larger pets or extended stays.</p></div></div><div class="qa"><button>Do you handle large or high-maintenance breeds?<span class="ic">+</span></button><div class="ans"><p>Absolutely. Doodles, Bernedoodles, poodles, and heavy double coats are a big part of what we do — including the monthly regulars.</p></div></div><div class="qa"><button>Where are you located?<span class="ic">+</span></button><div class="ans"><p>We&#x27;re at 436 Racetrack Rd NW in Fort Walton Beach, serving Wright, Shalimar, Ocean City, Mary Esther, Destin, and Niceville.</p></div></div></div>
+</div></section>
+
+<section class="areas" id="areas"><div class="wrap center">
+  <div class="eyebrow" style="color:var(--accent-text)">Service Area</div>
+  <h2>Proudly Serving Fort Walton Beach &amp; Nearby</h2>
+  <div class="chips"><span>Fort Walton Beach</span><span>Wright</span><span>Shalimar</span><span>Ocean City</span><span>Mary Esther</span><span>Destin</span><span>Niceville</span><span>Cinco Bayou</span><span>Valparaiso</span><span>Eglin AFB</span></div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Ready to Get Started?</h2><p>Get your free pet grooming &amp; boarding quote today.</p>
+  <a href="#contact" class="btn btn-light">Get a Free Quote</a>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><div class="fbrand"><img src="logo.svg" alt="Noah&#x27;s Barks and Purrs"></div>
+      <p>Quality pet grooming &amp; boarding services across Fort Walton Beach and the surrounding area.</p>
+      <p style="margin-top:12px;color:#fff;font-weight:700">(850) 226-6321</p></div>
+    <div><h4>Company</h4><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+    <div><h4>Services</h4><a href="#services">Full Dog Grooming</a><a href="#services">Cat Grooming</a><a href="#services">Bath &amp; Brush</a><a href="#services">Breed Cuts &amp; Hand Scissoring</a><a href="#services">Pet Boarding</a></div>
+    <div><h4>Hours</h4><p>Mon-Sat: 8am - 6pm</p><p>Sun: Closed</p></div>
+  </div>
+  <div class="fbot">&copy; 2026 Noah&#x27;s Barks and Purrs. All rights reserved.</div>
+</div></footer>
+
+<style>
+#mschat{position:fixed;right:22px;bottom:22px;z-index:90;font-family:var(--font)}
+#mschat .ms-bubble{background:var(--accent);color:var(--accent-ink);font-weight:800;border:none;cursor:pointer;padding:14px 22px 14px 18px;border-radius:40px;box-shadow:0 10px 26px rgba(0,0,0,.28);display:flex;gap:9px;align-items:center;font-size:15px}
+#mschat .ms-bubble:hover{background:var(--accent-dark)}
+#mschat .ms-panel{position:absolute;right:0;bottom:66px;width:332px;max-width:86vw;background:#fff;border-radius:18px;box-shadow:0 22px 54px rgba(0,0,0,.30);overflow:hidden;display:none;flex-direction:column}
+#mschat.open .ms-panel{display:flex}
+#mschat .ms-head{background:var(--accent);color:var(--accent-ink);padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+#mschat .ms-head b{font-size:16px;display:block} #mschat .ms-head span{font-size:12px;opacity:.9}
+#mschat .ms-x{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;line-height:1}
+#mschat .ms-body{padding:16px;background:#f6f8fb}
+#mschat .ms-msg{background:#fff;border-radius:14px;padding:12px 14px;font-size:14px;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);margin-bottom:12px}
+#mschat input,#mschat textarea{width:100%;padding:11px 13px;border:1px solid #e2e6ec;border-radius:10px;margin-bottom:9px;font-size:14px;font-family:inherit}
+#mschat textarea{min-height:62px;resize:vertical}
+#mschat .ms-send{width:100%;background:var(--accent);color:var(--accent-ink);border:none;border-radius:10px;padding:12px;font-weight:800;cursor:pointer;font-size:14px}
+#mschat .ms-send:hover{background:var(--accent-dark)}
+#mschat .ms-done{text-align:center;padding:18px 6px;color:var(--primary-dark);font-weight:700;font-size:15px}
+</style>
+<div id="mschat">
+  <div class="ms-panel">
+    <div class="ms-head"><div><b>Noah&#x27;s Barks and Purrs</b><span>Typically replies in a few minutes</span></div>
+      <button class="ms-x" onclick="msChat(0)" aria-label="Close">&times;</button></div>
+    <div class="ms-body">
+      <div class="ms-msg">Hi! &#128075; Thanks for visiting Noah&#x27;s Barks and Purrs. Tell us what you need and we will text you right back.</div>
+      <div id="msForm">
+        <input id="msName" placeholder="Your name">
+        <input id="msPhone" placeholder="Phone number">
+        <textarea id="msMsg" placeholder="How can we help?"></textarea>
+        <button class="ms-send" onclick="msSend()">Send</button>
+      </div>
+      <div class="ms-done" id="msDone" style="display:none"></div>
+    </div>
+  </div>
+  <button class="ms-bubble" onclick="msChat()">&#128172; Chat with us</button>
+</div>
+<script>
+function msChat(f){var c=document.getElementById('mschat');if(f===undefined){c.classList.toggle('open');}else{c.classList.toggle('open',!!f);}}
+function msSend(){var v=document.getElementById('msName').value||'there';var n=v.split(' ')[0];document.getElementById('msForm').style.display='none';var d=document.getElementById('msDone');d.style.display='block';d.innerHTML='Thanks '+n+'! &#127881;<br>We got your message and will text you shortly.';}
+</script>
+
+<script>
+document.querySelectorAll('.qa button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var a=this.nextElementSibling, open=a.style.maxHeight && a.style.maxHeight!=='0px';
+    document.querySelectorAll('.qa .ans').forEach(function(x){x.style.maxHeight='0px'});
+    document.querySelectorAll('.qa .ic').forEach(function(x){x.textContent='+'});
+    if(!open){a.style.maxHeight=a.scrollHeight+'px';this.querySelector('.ic').textContent='-';}
+  });
+});
+</script>
+</body></html>
