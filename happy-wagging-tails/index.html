@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Wagging Tails | In-Home Pet Boarding &amp; Sitting in Cape Coral, FL</title>
+<meta name="description" content="Happy Wagging Tails — in-home pet boarding and sitting in Cape Coral, FL. Dogs and cats cared for in a real home, not a kennel. Daily photo updates, fenced yard, overnight and extended stays. 4.9 stars from 130 reviews.">
+<style>
+:root{
+  --primary:#1F4D45; --primary-dark:#153833;
+  --accent:#E8933A; --accent-dark:#C4762A; --accent-ink:#17110A; --accent-text:#A66021; --logo-h:62px; --quote-logo-h:150px;
+  --ink:#1f2733; --muted:#5b6675; --line:#e7eaef; --bg-soft:#f5f7fa; --white:#fff;
+  --radius:16px; --shadow:0 18px 40px rgba(20,30,50,.10);
+  --font:'Segoe UI',system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);line-height:1.65;background:var(--white)}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+h1,h2,h3{line-height:1.15;color:var(--primary-dark)}
+h2{font-size:34px;margin-bottom:10px}
+.eyebrow{color:var(--accent-text);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-bottom:10px}
+.center{text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;line-height:1;background:var(--accent);color:var(--accent-ink);font-weight:800;padding:15px 30px;border-radius:12px;
+  border:none;cursor:pointer;font-size:15px;letter-spacing:.3px;transition:.18s;box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.btn:hover{background:var(--accent-dark);transform:translateY(-2px)}
+.btn-sm{padding:10px 20px;font-size:14px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.10)}
+.btn-light{background:#fff;color:var(--primary-dark)}
+
+header{position:sticky;top:0;z-index:60;background:#fff;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:21px;color:var(--primary-dark)}
+.brand img{height:var(--logo-h);width:auto;max-height:110px}
+.navlinks{display:flex;gap:26px;font-weight:600}
+.navlinks a:hover{color:var(--accent)}
+.navside{display:flex;align-items:center;gap:18px}
+.phone{font-weight:800;color:var(--primary-dark);white-space:nowrap}
+@media(max-width:920px){.navlinks,.phone{display:none}}
+
+.hero{position:relative;color:#fff;background:linear-gradient(rgba(18,26,40,.62),rgba(18,26,40,.72)),url('https://images.pexels.com/photos/5942759/pexels-photo-5942759.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding:96px 0}
+.hero h1{color:#fff;font-size:48px;margin-bottom:8px}
+.hero .lede{font-size:25px;font-weight:600;opacity:.96;margin-bottom:14px}
+.hero p.sub{font-size:17px;opacity:.92;max-width:520px;margin-bottom:26px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.badges span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:30px;font-size:13px;font-weight:600}
+.quote{background:#fff;color:var(--ink);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.quote-logo{height:var(--quote-logo-h);max-height:190px;width:auto;margin:0 auto 16px;display:block}
+.quote h3{text-align:center;font-size:23px;margin-bottom:3px}
+.quote .qs{text-align:center;color:var(--muted);font-size:14px;margin-bottom:18px}
+.field{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;margin-bottom:12px;font-size:15px;font-family:inherit}
+textarea.field{min-height:84px;resize:vertical}
+.consent{font-size:11px;color:var(--muted);margin:4px 0 14px}
+.quote .btn{width:100%}
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr;padding:56px 0}.hero h1{font-size:34px}.hero .lede{font-size:20px}}
+
+.trust{background:var(--primary-dark);color:#fff}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:space-around;gap:16px;padding:22px}
+.trust b{font-size:15px;letter-spacing:.5px;text-transform:uppercase;display:flex;gap:9px;align-items:center}
+.trust b::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--accent)}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-grid img{border-radius:var(--radius);height:420px;width:100%;object-fit:cover;box-shadow:var(--shadow)}
+.about p{color:var(--muted);font-size:17px;margin-top:8px}
+@media(max-width:920px){.about-grid{grid-template-columns:1fr}.about-grid img{height:280px}}
+
+.services{background:var(--bg-soft)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.2s}
+.card:hover{transform:translateY(-6px)}
+.card img{height:190px;width:100%;object-fit:cover}
+.card .cb{padding:22px}
+.card h3{font-size:20px;margin-bottom:8px;color:var(--primary-dark)}
+.card p{color:var(--muted);font-size:14.5px}
+@media(max-width:920px){.cards{grid-template-columns:1fr}}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:42px}
+.step{text-align:center}
+.step .n{width:66px;height:66px;border-radius:50%;background:var(--primary);color:#fff;font-size:26px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.step h3{margin-bottom:6px} .step p{color:var(--muted);font-size:15px}
+@media(max-width:920px){.steps{grid-template-columns:1fr}}
+
+.gallery{background:var(--bg-soft)}
+.grid-imgs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+.grid-imgs img{height:180px;width:100%;object-fit:cover;border-radius:12px}
+@media(max-width:920px){.grid-imgs{grid-template-columns:repeat(2,1fr)}}
+
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
+.review{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.stars{color:#f5b50a;font-size:18px;margin-bottom:10px}
+.review p{color:#39424f;font-size:15px} .review .who{margin-top:14px;font-weight:800;color:var(--primary-dark)}
+@media(max-width:920px){.rev{grid-template-columns:1fr}}
+
+.faq{max-width:840px;margin:36px auto 0}
+.qa{border-bottom:1px solid var(--line)}
+.qa button{width:100%;text-align:left;background:none;border:none;padding:20px 0;font-size:17px;font-weight:700;
+  color:var(--primary-dark);cursor:pointer;display:flex;justify-content:space-between;gap:16px;font-family:inherit}
+.qa .ic{color:var(--accent-text);font-size:24px;line-height:1}
+.qa .ans{max-height:0;overflow:hidden;transition:max-height .28s ease}
+.qa .ans p{padding-bottom:18px;color:var(--muted);font-size:15.5px}
+
+.areas{background:var(--primary-dark);color:#fff}
+.areas h2{color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.chips span{background:rgba(255,255,255,.12);padding:10px 20px;border-radius:30px;font-weight:600}
+
+.final{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;text-align:center}
+.final h2{color:#fff;font-size:38px} .final p{font-size:19px;opacity:.95;margin:10px 0 26px}
+
+footer{background:#161d28;color:#aab4c2;padding:56px 0 26px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;text-transform:uppercase;letter-spacing:1px;font-size:15px;margin-bottom:14px}
+footer a{display:block;margin-bottom:7px} footer a:hover{color:#fff}
+.fbrand{font-weight:800;font-size:21px;color:#fff;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.fbrand img{height:38px}
+.fbot{border-top:1px solid #2a3340;margin-top:34px;padding-top:18px;text-align:center;color:#7f8a99;font-size:13px}
+@media(max-width:920px){.fgrid{grid-template-columns:1fr 1fr}}
+</style></head>
+<body>
+
+<header><div class="wrap"><nav>
+  <a href="#home" class="brand"><img src="logo.svg" alt="Happy Wagging Tails"></a>
+  <div class="navlinks">
+    <a href="#services">Services</a><a href="#about">About</a>
+    <a href="#gallery">Gallery</a><a href="#areas">Areas</a><a href="#contact">Contact</a>
+  </div>
+  <div class="navside"><span class="phone">(239) 810-7716</span><a href="#contact" class="btn btn-sm">Free Quote</a></div>
+</nav></div></header>
+
+<section class="hero" id="home"><div class="wrap"><div class="hero-grid">
+  <div>
+    <h1>In-Home Pet Boarding in Cape Coral, FL</h1>
+    <div class="lede">A Real Home. Not a Kennel.</div>
+    <p class="sub">Your dog or cat stays in a comfortable home with a fenced yard, personal attention, and daily photo updates while you&#x27;re away — never a concrete run or a stacked cage. 4.9 stars across 130 reviews from Cape Coral pet parents.</p>
+    <a href="#contact" class="btn">Get a Free Quote</a>
+    <div class="badges"><span>4.9 ★ · 130 Google Reviews</span><span>Dogs &amp; Cats Welcome</span><span>Daily Photo Updates</span><span>Fenced Yard</span></div>
+  </div>
+  <div class="quote" id="contact">
+    <img class="quote-logo" src="logo.svg" alt="Happy Wagging Tails"><h3>Get a Free Quote</h3><div class="qs">We'll get back to you the same day.</div>
+    <input class="field" placeholder="Full Name *">
+    <input class="field" placeholder="Phone *">
+    <textarea class="field" placeholder="Tell us about your project *"></textarea>
+    <div class="consent">By providing your phone number you agree to receive text messages from Happy Wagging Tails.</div>
+    <button class="btn">Send</button>
+  </div>
+</div></div></section>
+
+<div class="trust"><div class="wrap"><b>4.9★ (130 Google reviews)</b><b>In-Home, Not a Kennel</b><b>Dogs and Cats</b><b>Cape Coral Local</b></div></div>
+
+<section class="about" id="about"><div class="wrap about-grid">
+  <img src="https://images.pexels.com/photos/10117506/pexels-photo-10117506.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Happy Wagging Tails">
+  <div><div class="eyebrow">About Us</div><h2>Cape Coral&#x27;s Trusted In-Home Pet Sitter</h2><p>Happy Wagging Tails is in-home pet boarding run by Miriam, right here in Cape Coral. Your pet doesn&#x27;t go into a kennel run or a stacked cage — they stay in a real home with a fenced yard, a couch to nap on, and someone who&#x27;s actually around all day. That&#x27;s why clients keep coming back: dogs settle in fast, anxious pets do better, and owners get photo updates while they&#x27;re away instead of wondering. Over 130 pet parents have left reviews averaging 4.9 stars, and most of them mention the same thing — Miriam treats their pets like her own. Dogs and cats are both welcome, from weekend trips to extended stays.</p>
+    <p style="margin-top:14px"><a href="#contact" class="btn">Get a Free Quote</a></p></div>
+</div></section>
+
+<section class="services" id="services"><div class="wrap center">
+  <div class="eyebrow">Our Services</div><h2>Our Pet Care Services</h2>
+  <div class="cards" style="text-align:left"><div class="card"><img src="https://images.pexels.com/photos/36771630/pexels-photo-36771630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Overnight Dog Boarding"><div class="cb"><h3>Overnight Dog Boarding</h3><p>Your dog stays in a home environment with room to relax, regular walks, and real companionship — not a cage in a back room.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/17207659/pexels-photo-17207659.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Cat Boarding &amp; Care"><div class="cb"><h3>Cat Boarding &amp; Care</h3><p>Cats welcome too. Quiet spaces, familiar routines, feeding, litter care, and gentle attention from someone who understands cats.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/13759826/pexels-photo-13759826.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Daily Photo Updates"><div class="cb"><h3>Daily Photo Updates</h3><p>You get pictures and updates while you&#x27;re away, so you can actually enjoy your trip instead of wondering how your pet is doing.</p></div></div><div class="card"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk7_la4_APJB91iE_T4WIRzNQG9seO-v42AY3CaBa8y6MzLxLwa6eMVjl9wtIzpu1q0rpeblr5tuT_uqwT8QmNLdKo-T0XFuRh7Q-e3ulS0p6jV9PNsz3hEnmn7FjAanl0SUmPC=w1000-h750" alt="Fenced Yard &amp; Playtime"><div class="cb"><h3>Fenced Yard &amp; Playtime</h3><p>A secure fenced yard for safe outdoor time, play, and potty breaks throughout the day — not just a quick leash walk.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/14459171/pexels-photo-14459171.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Extended &amp; Holiday Stays"><div class="cb"><h3>Extended &amp; Holiday Stays</h3><p>Week-long trips, holidays, and longer stays handled with the same routine and attention as a single overnight.</p></div></div><div class="card"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmdAQPsK4ZA9XWz4PZNAyEBLIKcukzo9Ixs8njCVzhRx2PSOWE7ftIN4E1v1ai5u3ps9EFY4QFDStmzp1zsx_F81vE9_5c2JPh5LBUpulKJLot7F4GU8zDzSUB-TL930EbxPUbF=w1000-h750" alt="All Sizes &amp; Temperaments"><div class="cb"><h3>All Sizes &amp; Temperaments</h3><p>From small dogs to big guys, seniors, and anxious pets — we take the time to make sure every pet settles in comfortably.</p></div></div></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">The Process</div><h2>Simple 3-Step Process</h2>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>Contact Us</h3><p>Fill out the free quote form and tell us about your project.</p></div>
+    <div class="step"><div class="n">2</div><h3>Free Estimate</h3><p>We visit at a time that works for you and provide a clear, honest estimate.</p></div>
+    <div class="step"><div class="n">3</div><h3>Get It Done</h3><p>Approve the estimate and we schedule the work and deliver results you'll love.</p></div>
+  </div>
+</div></section>
+
+<section class="gallery" id="gallery"><div class="wrap center">
+  <div class="eyebrow">Our Work</div><h2>Recent Projects</h2>
+  <div class="grid-imgs"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmdAQPsK4ZA9XWz4PZNAyEBLIKcukzo9Ixs8njCVzhRx2PSOWE7ftIN4E1v1ai5u3ps9EFY4QFDStmzp1zsx_F81vE9_5c2JPh5LBUpulKJLot7F4GU8zDzSUB-TL930EbxPUbF=w1000-h750" alt="Happy Wagging Tails project"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk7_la4_APJB91iE_T4WIRzNQG9seO-v42AY3CaBa8y6MzLxLwa6eMVjl9wtIzpu1q0rpeblr5tuT_uqwT8QmNLdKo-T0XFuRh7Q-e3ulS0p6jV9PNsz3hEnmn7FjAanl0SUmPC=w1000-h750" alt="Happy Wagging Tails project"><img src="https://images.pexels.com/photos/5942759/pexels-photo-5942759.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Happy Wagging Tails project"><img src="https://images.pexels.com/photos/36771630/pexels-photo-36771630.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Happy Wagging Tails project"><img src="https://images.pexels.com/photos/17207659/pexels-photo-17207659.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Happy Wagging Tails project"><img src="https://images.pexels.com/photos/14459171/pexels-photo-14459171.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Happy Wagging Tails project"><img src="https://images.pexels.com/photos/7801145/pexels-photo-7801145.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Happy Wagging Tails project"><img src="https://images.pexels.com/photos/13759826/pexels-photo-13759826.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Happy Wagging Tails project"></div>
+</div></section>
+
+<section><div class="wrap center">
+  <div class="eyebrow">Reviews</div><h2>What Customers Say</h2>
+  <div class="rev" style="text-align:left"><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>I was a little skeptical at first, because my 3 dogs are like my children! But after reading the reviews for Miriam and seeing how happy everyone was with her dog sitting, I decided to give her a try. It was amazing — my dogs instantly loved her.</p><div class="who">&mdash; Faith S.</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>I couldn&#x27;t be happier with the care my cat Jasper received! From the start, Miriam was professional, kind, and very attentive. She went above and beyond to make sure Jasper felt comfortable and loved while I was away, and she kept me updated.</p><div class="who">&mdash; Tabitha R.</div></div><div class="review"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>My co-workers referred me to her and my golden doodles loved her. They stayed with her for a week and she sent me pictures every day. Highly recommend!</p><div class="who">&mdash; Ernesto P.</div></div></div>
+</div></section>
+
+<section class="services"><div class="wrap">
+  <h2 class="center">Frequently Asked Questions</h2>
+  <div class="faq"><div class="qa"><button>Where do the pets stay?<span class="ic">+</span></button><div class="ans"><p>In a real home in Cape Coral with a fenced yard — not a kennel facility. Pets have run of a normal living space instead of a concrete run or a stacked cage.</p></div></div><div class="qa"><button>Do you board cats as well as dogs?<span class="ic">+</span></button><div class="ans"><p>Yes. Cats are welcome and get their own quiet space, feeding schedule, litter care, and gentle one-on-one attention.</p></div></div><div class="qa"><button>Will I get updates while I&#x27;m away?<span class="ic">+</span></button><div class="ans"><p>Yes — daily photos and updates are standard. Clients consistently mention this as their favorite part.</p></div></div><div class="qa"><button>What areas do you serve?<span class="ic">+</span></button><div class="ans"><p>We&#x27;re based in Cape Coral and serve the surrounding Lee County area, including Fort Myers, North Fort Myers, Matlacha, and Pine Island.</p></div></div></div>
+</div></section>
+
+<section class="areas" id="areas"><div class="wrap center">
+  <div class="eyebrow" style="color:var(--accent-text)">Service Area</div>
+  <h2>Proudly Serving Cape Coral &amp; Nearby</h2>
+  <div class="chips"><span>Cape Coral</span><span>Fort Myers</span><span>North Fort Myers</span><span>Matlacha</span><span>Pine Island</span><span>Burnt Store</span><span>Fort Myers Beach</span><span>Iona</span><span>San Carlos Park</span><span>Lee County</span></div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Ready to Get Started?</h2><p>Get your free pet boarding quote today.</p>
+  <a href="#contact" class="btn btn-light">Get a Free Quote</a>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><div class="fbrand"><img src="logo.svg" alt="Happy Wagging Tails"></div>
+      <p>Quality pet boarding services across Cape Coral and the surrounding area.</p>
+      <p style="margin-top:12px;color:#fff;font-weight:700">(239) 810-7716</p></div>
+    <div><h4>Company</h4><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+    <div><h4>Services</h4><a href="#services">Overnight Dog Boarding</a><a href="#services">Cat Boarding &amp; Care</a><a href="#services">Daily Photo Updates</a><a href="#services">Fenced Yard &amp; Playtime</a><a href="#services">Extended &amp; Holiday Stays</a></div>
+    <div><h4>Hours</h4><p>Mon-Sat: 8am - 6pm</p><p>Sun: Closed</p></div>
+  </div>
+  <div class="fbot">&copy; 2026 Happy Wagging Tails. All rights reserved.</div>
+</div></footer>
+
+<style>
+#mschat{position:fixed;right:22px;bottom:22px;z-index:90;font-family:var(--font)}
+#mschat .ms-bubble{background:var(--accent);color:var(--accent-ink);font-weight:800;border:none;cursor:pointer;padding:14px 22px 14px 18px;border-radius:40px;box-shadow:0 10px 26px rgba(0,0,0,.28);display:flex;gap:9px;align-items:center;font-size:15px}
+#mschat .ms-bubble:hover{background:var(--accent-dark)}
+#mschat .ms-panel{position:absolute;right:0;bottom:66px;width:332px;max-width:86vw;background:#fff;border-radius:18px;box-shadow:0 22px 54px rgba(0,0,0,.30);overflow:hidden;display:none;flex-direction:column}
+#mschat.open .ms-panel{display:flex}
+#mschat .ms-head{background:var(--accent);color:var(--accent-ink);padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+#mschat .ms-head b{font-size:16px;display:block} #mschat .ms-head span{font-size:12px;opacity:.9}
+#mschat .ms-x{background:none;border:none;color:#fff;font-size:24px;cursor:pointer;line-height:1}
+#mschat .ms-body{padding:16px;background:#f6f8fb}
+#mschat .ms-msg{background:#fff;border-radius:14px;padding:12px 14px;font-size:14px;color:#333;box-shadow:0 2px 8px rgba(0,0,0,.06);margin-bottom:12px}
+#mschat input,#mschat textarea{width:100%;padding:11px 13px;border:1px solid #e2e6ec;border-radius:10px;margin-bottom:9px;font-size:14px;font-family:inherit}
+#mschat textarea{min-height:62px;resize:vertical}
+#mschat .ms-send{width:100%;background:var(--accent);color:var(--accent-ink);border:none;border-radius:10px;padding:12px;font-weight:800;cursor:pointer;font-size:14px}
+#mschat .ms-send:hover{background:var(--accent-dark)}
+#mschat .ms-done{text-align:center;padding:18px 6px;color:var(--primary-dark);font-weight:700;font-size:15px}
+</style>
+<div id="mschat">
+  <div class="ms-panel">
+    <div class="ms-head"><div><b>Happy Wagging Tails</b><span>Typically replies in a few minutes</span></div>
+      <button class="ms-x" onclick="msChat(0)" aria-label="Close">&times;</button></div>
+    <div class="ms-body">
+      <div class="ms-msg">Hi! &#128075; Thanks for visiting Happy Wagging Tails. Tell us what you need and we will text you right back.</div>
+      <div id="msForm">
+        <input id="msName" placeholder="Your name">
+        <input id="msPhone" placeholder="Phone number">
+        <textarea id="msMsg" placeholder="How can we help?"></textarea>
+        <button class="ms-send" onclick="msSend()">Send</button>
+      </div>
+      <div class="ms-done" id="msDone" style="display:none"></div>
+    </div>
+  </div>
+  <button class="ms-bubble" onclick="msChat()">&#128172; Chat with us</button>
+</div>
+<script>
+function msChat(f){var c=document.getElementById('mschat');if(f===undefined){c.classList.toggle('open');}else{c.classList.toggle('open',!!f);}}
+function msSend(){var v=document.getElementById('msName').value||'there';var n=v.split(' ')[0];document.getElementById('msForm').style.display='none';var d=document.getElementById('msDone');d.style.display='block';d.innerHTML='Thanks '+n+'! &#127881;<br>We got your message and will text you shortly.';}
+</script>
+
+<script>
+document.querySelectorAll('.qa button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var a=this.nextElementSibling, open=a.style.maxHeight && a.style.maxHeight!=='0px';
+    document.querySelectorAll('.qa .ans').forEach(function(x){x.style.maxHeight='0px'});
+    document.querySelectorAll('.qa .ic').forEach(function(x){x.textContent='+'});
+    if(!open){a.style.maxHeight=a.scrollHeight+'px';this.querySelector('.ic').textContent='-';}
+  });
+});
+</script>
+</body></html>
